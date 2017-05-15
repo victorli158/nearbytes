@@ -38,4 +38,4 @@
 | "/home" | "HomeContainer" |
 | "/home/restaurant/:restaurantId" | "RestaurantContainer" |
 | "/home/search-results" | "SearchResultsContainer" |
-| "/new-review" | "ReviewFormContainer" |
+| "/home/restaurant/:restaurantId/review" | "ReviewFormContainer" |

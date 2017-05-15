@@ -18,7 +18,7 @@ NearBytes is a web application inspired by Yelp built using Ruby on Rails and Re
 - [ ] Reviews / ratings
 - [ ] Map
 
-## Design Docs (pending)
+## Design Docs
 * [View Wireframes][wireframes]
 * [React Components][components]
 * [API endpoints][api-endpoints]
@@ -31,4 +31,30 @@ NearBytes is a web application inspired by Yelp built using Ruby on Rails and Re
 [api-endpoints]: docs/api-endpoints.md
 [schema]: docs/schema.md
 
-## Implementation Timeline (pending)
+## Implementation Timeline
+
+### Phase 1: Backend setup and Front End User Authentication (2 days)
+
+**Objective**: Functioning rails project with front-end Authentication
+
+### Phase 2: Restaurants Model, API, and components (2 days)
+
+**Objective:** Restaurants can be created, read, edited and destroyed through the API.
+
+### Phase 3: Reviews (2 days)
+
+**Objective:** Reviews belong to Restaurants and can be created, read, edited and destroyed through the API.
+
+### Phase 4: Home Page and Search Bar (2 days)
+
+**Objective:** Create a Home Page with a Search Bar.
+
+### Phase 5: Map (1 day)
+
+**Objective:** Implement a map showing the restaurants that were returned by the search
+
+### Bonus Features
+
+* Mark reviews funny, cool, useful, etc.
+* Profile
+* Friends

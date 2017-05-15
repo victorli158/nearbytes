@@ -1,8 +1,10 @@
 # NearBytes
 
 [Heroku link][heroku]
+[Trello link][trello]
 
 [heroku]: https://nearbytes.herokuapp.com/
+[trello]: https://trello.com/b/tE23vebA/nearbytes
 
 ## Minimum Viable Product
 
@@ -16,7 +18,7 @@ NearBytes is a web application inspired by Yelp built using Ruby on Rails and Re
 - [ ] Reviews / ratings
 - [ ] Map
 
-## Design Docs
+## Design Docs (pending)
 * [View Wireframes][wireframes]
 * [React Components][components]
 * [API endpoints][api-endpoints]
@@ -28,3 +30,5 @@ NearBytes is a web application inspired by Yelp built using Ruby on Rails and Re
 [sample-state]: docs/sample-state.md
 [api-endpoints]: docs/api-endpoints.md
 [schema]: docs/schema.md
+
+## Implementation Timeline (pending)

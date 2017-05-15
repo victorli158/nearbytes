@@ -1,24 +1,29 @@
-# README
+# NearBytes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[https://nearbytes.herokuapp.com/][heroku]
 
-Things you may want to cover:
 
-* Ruby version
+## Minimum Viable Product
 
-* System dependencies
+NearBytes is a web application inspired by Yelp built using Ruby on Rails and React/Redux. By the end of Week 9, this app will, at a minimum, satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
-* Configuration
+- [ ] New account creation, login, and guest/demo login
+- [ ] A production README
+- [ ] Hosting on Heroku
+- [ ] Business Page
+- [ ] Search / filters
+- [ ] Reviews / ratings
+- [ ] Map
 
-* Database creation
+## Design Docs
+* [View Wireframes][wireframes]
+* [React Components][components]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+* [Sample State][sample-state]
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[wireframes]: docs/wireframes
+[components]: docs/component-hierarchy.md
+[sample-state]: docs/sample-state.md
+[api-endpoints]: docs/api-endpoints.md
+[schema]: docs/schema.md

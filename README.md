@@ -1,7 +1,8 @@
 # NearBytes
 
-[https://nearbytes.herokuapp.com/][heroku]
+[Heroku link][heroku]
 
+[heroku]: https://nearbytes.herokuapp.com/
 
 ## Minimum Viable Product
 

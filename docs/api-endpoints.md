@@ -29,3 +29,7 @@
  - `POST /api/restaurants/:restaurant_id/reviews`
  - `GET /api/reviews/:id`
  - `DELETE /api/reviews/:id`
+
+### Search
+
+ - `GET /api/restaurants/search`

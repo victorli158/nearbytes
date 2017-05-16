@@ -3,19 +3,21 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 // import * as SessionApiUtil from './util/session_api_util';
+import { signup, login, logout } from './actions/session_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let store;
-  if (window.currentUser) {
-    const preloadedState = { session: { currentUser: window.currentUser } };
-    store = configureStore(preloadedState);
-    delete window.currentUser;
-  } else {
-    store = configureStore();
-  }
+  // let store;
+  // if (window.currentUser) {
+  //   const preloadedState = { session: { currentUser: window.currentUser } };
+  //   store = configureStore(preloadedState);
+  //   delete window.currentUser;
+  // } else {
+  //   store = configureStore();
+  // }
+  window.store = configureStore();
   const root = document.getElementById('root');
-  // window.login = SessionApiUtil.login;
-  // window.logout = SessionApiUtil.logout;
-  // window.signup = SessionApiUtil.signup;
-  ReactDOM.render(<Root store={ store }/>, root);
+  window.login = login;
+  window.logout = logout;
+  window.signup = signup;
+  ReactDOM.render(<Root store={ window.store }/>, root);
 });

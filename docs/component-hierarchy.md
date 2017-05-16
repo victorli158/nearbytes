@@ -6,6 +6,7 @@
 **HomeContainer**
 - Home
 - FeaturedRestaurant
+- Category
 
 **RestaurantSearch**
 - ByteSearch

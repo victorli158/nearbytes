@@ -1,5 +1,5 @@
 header {
-  background-color: #3B50F5;
+  background-color: #465AFF;
 }
 
 .nav-bar {
@@ -9,26 +9,30 @@ header {
 }
 
 .greeting {
+  display: flex;
   color: white;
-  font-weight: bold;
-  list-style: none;
+  font-weight: 400;
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .logo {
-  height: 60px;
+  height: 50px;
+  width: auto;
   margin: 10px;
+  align-items: center;
 }
 
 .nav-buttons {
-  list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .nav-button {
-  font: bold 12px;
-  background-color: #000080;
-  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #1D32D7;
+  border-radius: 4px;
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;

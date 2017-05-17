@@ -1,0 +1,65 @@
+h3 {
+  color: #465AFF;
+  font-size: 22px;
+  margin: 5px;
+}
+
+.sub-heading {
+  font-size: 15px;
+  text-align: center;
+}
+
+.link {
+  color: #1D32D7;
+  font-weight: bold;
+}
+
+.login-form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  margin: 150px;
+  width: 300px;
+}
+
+.login-input {
+  width: 200px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.submit {
+  background-color: #1D32D7;
+  color: white;
+  padding: 20px;
+  line-height: 3px;
+  width: 200px;
+  border-color: #1D328C;
+}
+
+.submit-div {
+  text-align: center;
+}
+
+.session-form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  display: flex;
+  width: 200px;
+}
+
+.graphic {
+  width: 400px;
+  margin: 150px;
+}

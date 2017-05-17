@@ -31,9 +31,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">sign up instead</Link>;
+      return <Link className="link" to="/signup">Sign Up</Link>;
     } else {
-      return <Link to="/login">log in instead</Link>;
+      return <Link className="link" to="/login">Log In</Link>;
     }
   }
 
@@ -51,33 +51,58 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="session-form">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to NearBytes!
-          <br/>
-          Please {this.props.formType} or {this.navLink()}
-          {this.renderErrors()}
-          <div className="login-form">
+          { this.props.formType === "login" ? (
+            <div>
+              <h3>Log In to NearBytes</h3>
+              <p className="sub-heading">New to NearBytes? {this.navLink()}</p>
+            </div>
+          ) : (
+            <div>
+            <h3>Sign Up for NearBytes</h3>
+            <p className="sub-heading">Already on NearBytes? {this.navLink()}</p>
+          </div>
+          )
+        }
+          <div>
+            {this.renderErrors()}
             <br/>
-            <label>Username:
-            <input type="text"
-              value={this.state.username}
-              onChange={this.update('username')}
-              className="login-input"
-            />
+            <label>Username
+              <br/>
+              <br/>
+              <input className="login-input" type="text"
+                value={this.state.username}
+                onChange={this.update('username')}/>
             </label>
             <br/>
-            <label>Password:
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-              />
-              </label>
+            <br/>
+            <label>Password
               <br/>
-              <input type="submit" value="Submit" />
+              <br/>
+              <input className="login-input"
+                type="password"
+                value={this.state.password}
+                onChange={this.update('password')}/>
+            </label>
+              <br/>
+              { this.props.formType === 'login' ? (
+                <p className="disclaimer">
+                  By logging in, you agree to NearBytes's Terms of Service and Privacy Policy
+                </p>
+              ) : (
+                <p className="disclaimer">
+                  By signing up, you agree to NearBytes's Terms of Service and Privacy Policy
+                </p>
+              )}
+              <div className="submit-div">
+                <input className="submit" type="submit" value="Log In" />
+              </div>
           </div>
         </form>
+        <img className="graphic"
+          src="https://image.freepik.com/free-vector/two-people-in-a-restaurant_459-162.jpg"
+          title="Copyright Rosa Hernandez (2017)"/>
       </div>
     );
   }

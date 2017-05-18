@@ -13,7 +13,7 @@ const App = () => (
       <NavBarContainer />
     </header>
     <Switch>
-      <AuthRoute exact path="/" component={Home}/>
+      <Route exact path="/" component={Home}/>
       <AuthRoute path="/login" component={SessionFormContainer}/>
       <AuthRoute path="/signup" component={SessionFormContainer}/>
     </Switch>

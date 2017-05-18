@@ -1,5 +1,5 @@
 h3 {
-  color: #465AFF;
+  color: rgb(20, 90, 230);
   font-size: 22px;
   margin: 5px;
 }
@@ -23,7 +23,8 @@ h3 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 800px;
+  height: 80%;
+  min-height: 600px;
 }
 
 .errors {
@@ -40,7 +41,7 @@ h3 {
   justify-content: center;
   display: flex;
   flex-direction: row;
-  height: 800px;
+  height: 70%;
 }
 
 .login-form-box {

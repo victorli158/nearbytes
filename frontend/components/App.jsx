@@ -6,6 +6,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavBarContainer from './nav_bar/nav_bar_container';
 import { Footer } from './footer.jsx';
 import { Home } from './home/home';
+import RestaurantContainer from './restaurant/restaurant_container';
 
 const App = () => (
   <div className="container">
@@ -14,6 +15,7 @@ const App = () => (
     </header>
     <Switch>
       <Route exact path="/" component={Home}/>
+      <Route path="/restaurants/:id" component={RestaurantContainer}/>
       <AuthRoute path="/login" component={SessionFormContainer}/>
       <AuthRoute path="/signup" component={SessionFormContainer}/>
     </Switch>

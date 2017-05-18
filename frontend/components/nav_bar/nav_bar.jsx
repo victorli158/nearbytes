@@ -14,9 +14,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="nav-bar">
-        <Link to="/">
-          <img className="logo" src="http://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/001/956/medium/Vu_Pham_1.jpg?1491007903" />
-        </Link>
+        <Link className="logo" to="/">NearBytes</Link>
         { this.props.currentUser === null ? (
           <ul className="nav-buttons">
             <li>
@@ -50,7 +48,7 @@ class NavBar extends React.Component {
       </div>
     );
   }
-  
+
 }
 
 export default NavBar;

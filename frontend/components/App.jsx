@@ -4,9 +4,10 @@ import SessionFormContainer from './session_form/session_form_container';
 import { Route, Link, Switch, Redirect } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavBarContainer from './nav_bar/nav_bar_container';
+import { Footer } from './footer.jsx';
 
 const App = () => (
-  <div>
+  <div className="container">
     <header className="nav-bar">
       <NavBarContainer />
     </header>
@@ -14,6 +15,7 @@ const App = () => (
       <AuthRoute path="/login" component={SessionFormContainer}/>
       <AuthRoute path="/signup" component={SessionFormContainer}/>
     </Switch>
+    <Footer />
   </div>
 );
 

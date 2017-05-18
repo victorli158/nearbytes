@@ -18,6 +18,31 @@ h3 {
   text-decoration: underline;
 }
 
+.session-page {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+}
+
+.errors {
+  text-align: center;
+  color: red;
+  margin-top: 20px;
+  font-size: 17px;
+  position: absolute;
+  top: 0;
+}
+
+.form-logo-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+
 .login-form-box {
   display: flex;
   justify-content: center;
@@ -50,14 +75,6 @@ h3 {
 
 .submit-div {
   text-align: center;
-}
-
-.session-form {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  height: 800px;
 }
 
 .disclaimer {

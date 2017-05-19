@@ -7,18 +7,15 @@ class Restaurant extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchRestaurant(this.props.params.restaurantId);
-  }
-
-  componentWillReceiveProps(newProps) {
-    if (this.props.params.restaurantId !== newProps.params.restaurantId) {
-      this.props.fetchRestaurant(newProps.params.restaurantId);
-    }
+    console.log(this.props);
+    this.props.fetchRestaurant(this.props.match.params.id);
   }
 
   render() {
     return (
-      <div>{this.props}</div>
+      <div className="test">Restaurant!</div>
     );
   }
 }
+
+export default Restaurant;

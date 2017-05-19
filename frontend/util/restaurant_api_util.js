@@ -9,7 +9,7 @@ export const fetchRestaurants = (params) => (
 export const fetchRestaurant = (id) => (
   $.ajax({
     method: 'GET',
-    url: '/api/restaurants/${id}'
+    url: `/api/restaurants/${id}`
   })
 );
 

@@ -3,6 +3,11 @@
   font-size: 40px;
 }
 
+.rating-stars {
+  display: flex;
+  flex-direction: row;
+}
+
 .star {
   height: 24px;
   width: 24px;

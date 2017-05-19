@@ -1,5 +1,5 @@
 import React from 'react';
-import { starRating } from '../star_rating';
+import { starRating, goodStar, badStar, decentStar, blankStar } from '../star_rating';
 // import ReviewIndexContainer from '../reviews/review_container';
 
 class RestaurantMain extends React.Component {
@@ -16,6 +16,7 @@ class RestaurantMain extends React.Component {
       <div className="restaurant-show-main">
         <div className="main-info">
           <p className="main-name">{this.props.restaurant.name}</p>
+          {starRating(this.props.restaurant.averageRating)}
           <p>{this.props.restaurant.price}</p>
           <p>{this.props.restaurant.categories}</p>
         </div>

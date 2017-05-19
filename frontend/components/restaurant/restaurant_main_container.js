@@ -5,7 +5,6 @@ import RestaurantMain from './restaurant_main';
 
 const mapStateToProps = (state, ownProps) => ({
   restaurant: state.restaurant,
-  restaurants: state.restaurants,
   currentUser: state.session.currentUser
 });
 

@@ -30,6 +30,12 @@ class RestaurantMain extends React.Component {
             Add Photo
           </button>
         </div>
+        <div className="map-and-photos">
+          <img className="map" src="http://www.newthinktank.com/wp-content/uploads/2011/08/US-Map-Detailed-EPS.png"/>
+          <img className="doge" src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"/>
+          <img className="doge" src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"/>
+          <img className="doge" src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg"/>
+        </div>
       </div>
     );
   }

@@ -42,6 +42,8 @@ h3 {
   display: flex;
   flex-direction: row;
   height: 70%;
+  width: 40%;
+  min-width: 300px;
 }
 
 .login-form-box {
@@ -50,8 +52,8 @@ h3 {
   align-items: center;
   height: 400px;
   flex-direction: column;
-  margin: 150px;
-  width: 300px;
+  margin: 15%;
+  min-width: 300px;
 }
 
 .login-input {
@@ -88,5 +90,5 @@ h3 {
 
 .graphic {
   width: 400px;
-  margin: 150px;
+  margin: 15%;
 }

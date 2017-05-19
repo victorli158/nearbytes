@@ -29,15 +29,17 @@
 
 .restaurant-show-main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: rgb(245, 245, 245);
   width: 100%;
-  height: 400px;
+  height: 500px;
+  flex-wrap: wrap;
 }
 
 .main-info {
   margin-top: 30px;
   height: 115px;
+  margin-right: 12vw;
 }
 
 .main-links {
@@ -46,6 +48,7 @@
   flex-direction: row;
   align-items: center;
   height: 115px;
+  margin-left: 12vw;
 }
 
 .write-a-review {
@@ -57,8 +60,8 @@
   justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
@@ -93,4 +96,24 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: bold;
+}
+
+.map-and-photos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.map {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.doge {
+  height: 25vh;
+  width: 12vw;
+  display: flex;
+  margin: 10px;
 }

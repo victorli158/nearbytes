@@ -1,6 +1,6 @@
 class Restaurant < ApplicationRecord
-  validates :name, :description, :address, :hours, :price, :lat, :long,
-    presence: true
+  validates :name, :address, :price, :lat, :long, :phone, :mon, :tue,
+   :wed, :thu, :fri, :sat, :sun, :categories, presence: true
   validates :price, inclusion: { in: ['$', '$$', '$$$', '$$$$'] }
 
 end

@@ -16,9 +16,15 @@ class RestaurantMain extends React.Component {
       <div className="restaurant-show-main">
         <div className="main-info">
           <p className="main-name">{this.props.restaurant.name}</p>
-          {starRating(this.props.restaurant.averageRating)}
-          <p>{this.props.restaurant.price}</p>
-          <p>{this.props.restaurant.categories}</p>
+          <div className="review-stars-num">
+            {starRating(this.props.restaurant.averageRating)} {this.props.restaurant.numReviews} reviews
+          </div>
+          <p>{this.props.restaurant.price} • {this.props.restaurant.categories}</p>
+        </div>
+        <div className="main-links">
+          <button className="write-a-review">
+            ★ Write a Review
+          </button>
         </div>
       </div>
     );

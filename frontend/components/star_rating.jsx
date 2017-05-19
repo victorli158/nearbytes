@@ -1,46 +1,46 @@
 import React from 'react';
 
 const goodStar = () => {
-  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/goodStar_g0lskg.png"/>);
+  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/good-star_g0lskg.png"/>);
 };
 
 const decentStar = () => {
-  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/decentStar_kbdc8i.png"/>);
+  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/decent-star_kbdc8i.png"/>);
 };
 
 const badStar = () => {
-  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/badStar_daopxh.png"/>);
+  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/bad-star_daopxh.png"/>);
 };
 
 const blankStar = () => {
-  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/blankStar_izsa71.png"/>);
+  return (<img src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495210337/blank-star_izsa71.png"/>);
 };
 
 export const starRating = (rating) => {
   switch(rating) {
     case 5:
-      return (<div>
+      return (<p>
         {goodStar}{goodStar}{goodStar}{goodStar}{goodStar}
-      </div>);
+      </p>);
     case 4:
-      return (<div>
+      return (<p>
         {goodStar}{goodStar}{goodStar}{goodStar}{blankStar}
-      </div>);
+      </p>);
     case 3:
-      return (<div>
+      return (<p>
         {decentStar}{decentStar}{decentStar}{blankStar}{blankStar}
-      </div>);
+      </p>);
     case 2:
-      return (<div>
+      return (<p>
         {badStar}{badStar}{blankStar}{blankStar}{blankStar}
-      </div>);
+      </p>);
     case 1:
-      return (<div>
+      return (<p>
         {badStar}{blankStar}{blankStar}{blankStar}{blankStar}
-      </div>);
+      </p>);
     default:
-      return (<div>
+      return (<p>
         {blankStar}{blankStar}{blankStar}{blankStar}{blankStar}
-      </div>);
+      </p>);
   }
 };

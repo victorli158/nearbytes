@@ -1,4 +1,5 @@
 import React from 'react';
+import { starRating } from '../star_rating';
 // import ReviewIndexContainer from '../reviews/review_container';
 
 class RestaurantMain extends React.Component {

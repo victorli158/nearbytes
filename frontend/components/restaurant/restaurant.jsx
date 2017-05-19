@@ -1,4 +1,6 @@
 import React from 'react';
+import RestaurantMainContainer from './restaurant_main_container';
+import RestaurantContentContainer from './restaurant_content_container';
 // import ReviewIndexContainer from '../reviews/review_container';
 
 class Restaurant extends React.Component {
@@ -7,13 +9,15 @@ class Restaurant extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
     this.props.fetchRestaurant(this.props.match.params.id);
   }
 
   render() {
     return (
-      <div className="test">Restaurant!</div>
+      <div className="restaurant-show">
+        <RestaurantMainContainer />
+        <RestaurantContentContainer />
+      </div>
     );
   }
 }

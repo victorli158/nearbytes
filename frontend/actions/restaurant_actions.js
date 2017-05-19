@@ -26,9 +26,9 @@ export const fetchRestaurants = (params) => dispatch => (
 );
 
 export const fetchRestaurant = (id) => dispatch => (
-  RestaurantAPIUtil.fetchRestaurant(id).then(restaurant => (
-    dispatch(receiveRestaurant(restaurant))
-  ))
+  RestaurantAPIUtil.fetchRestaurant(id).then(restaurant => {
+    return dispatch(receiveRestaurant(restaurant));
+  })
 );
 
 export const createImage = (data) => dispatch => (

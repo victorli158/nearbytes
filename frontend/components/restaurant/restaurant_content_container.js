@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import { fetchRestaurant, createImage, fetchRestaurants } from '../../actions/restaurant_actions';
+import { fetchRestaurant, fetchRestaurants, createImage } from '../../actions/restaurant_actions';
 // import { fetchReviews } from '../../actions/review_actions';
-import Restaurant from './restaurant';
+import RestaurantContent from './restaurant_content';
 
 const mapStateToProps = (state, ownProps) => ({
   restaurant: state.restaurant,
@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Restaurant);
+)(RestaurantContent);

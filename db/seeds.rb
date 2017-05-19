@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Restaurant.destroy_all
+
 guest = User.create({ username: 'Guest', password: 'password' })
 
 restaurants = Restaurant.create([
@@ -39,7 +41,7 @@ restaurants = Restaurant.create([
     fri: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
     sat: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
     sun: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
-    categories: "Chinese Chicken Wings, Asian Fusion"
+    categories: "Chinese, Chicken Wings, Asian Fusion"
   },
   {
     name: "Udon Mugizo",

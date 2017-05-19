@@ -14,7 +14,9 @@ class RestaurantMain extends React.Component {
     return (
       <div className="restaurant-show-main">
         <div className="main-info">
-          {this.props.restaurant.name}
+          <p className="main-name">{this.props.restaurant.name}</p>
+          <p>{this.props.restaurant.price}</p>
+          <p>{this.props.restaurant.categories}</p>
         </div>
       </div>
     );

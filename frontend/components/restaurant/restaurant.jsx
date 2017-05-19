@@ -1,5 +1,5 @@
 import React from 'react';
-import ReviewIndexContainer from '../reviews/review_container';
+// import ReviewIndexContainer from '../reviews/review_container';
 
 class Restaurant extends React.Component {
   constructor(props) {
@@ -11,6 +11,14 @@ class Restaurant extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    if (this.props.params.restaurantId !== )
+    if (this.props.params.restaurantId !== newProps.params.restaurantId) {
+      this.props.fetchRestaurant(newProps.params.restaurantId);
+    }
+  }
+
+  render() {
+    return (
+      <div>{this.props}</div>
+    );
   }
 }

@@ -25,6 +25,10 @@ class RestaurantMain extends React.Component {
           <button className="write-a-review">
             ★ Write a Review
           </button>
+          <button className="add-photo">
+            <img className="camera-icon" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495228180/camera_tq5evd.png" />
+            Add Photo
+          </button>
         </div>
       </div>
     );

@@ -117,3 +117,52 @@
   display: flex;
   margin: 10px;
 }
+
+.restaurant-show-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.review-container {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgb(230, 230, 230);
+  height: 600px;
+  width: 600px;
+  margin-top: 30px;
+}
+
+.restaurant-show-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.days-hours {
+  display: flex;
+  flex-direction: row;
+}
+
+ul.days li, ul.hours li {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+ul.days li {
+  font-weight: bold;
+}
+
+ul.days {
+  margin-left: 30px;
+}
+
+ul.hours li {
+  margin-left: 20px;
+}
+
+h4.hours-heading {
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  color: #145AE6;
+}

@@ -183,12 +183,16 @@ h4.hours-heading {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
   margin-right: 30px;
+  border-color: rgb(230, 230, 230);
+  border-style: solid;
+
 }
 
 .review-item:not(:first-child) {
-  margin-top: 18px;
+  border-top-width: 1px;
+  padding-top: 18px;
 }
 
 .review-user {

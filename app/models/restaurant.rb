@@ -18,7 +18,7 @@ class Restaurant < ApplicationRecord
     end
 
     if num_reviews > 0
-      (sum/num_reviews).round
+      (sum.to_f/num_reviews).round
     else
       0
     end

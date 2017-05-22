@@ -832,7 +832,7 @@ reviews = Review.create([
     restaurant_id: 15
   },
   {
-    body: "Bella Trattoria? Mama mia!",
+    body: "Bella Trattoria? Mama mia! The spaghetti, simple as it is, is delicious!",
     rating: 4,
     user_id: 10,
     restaurant_id: 15
@@ -1082,5 +1082,368 @@ reviews = Review.create([
     rating: 3,
     user_id: 5,
     restaurant_id: 1
+  }
+])
+
+pictures = Picture.create([
+  {
+    restaurant_id: 1,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492636/o_g28ahv.jpg"
+  },
+  {
+    restaurant_id: 1,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492728/o_jlkxzg.jpg"
+  },
+  {
+    restaurant_id: 1,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492840/o_r5nyro.jpg"
+  },
+  {
+    restaurant_id: 2,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492923/o_rzt0tf.jpg"
+  },
+  {
+    restaurant_id: 2,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492987/o_bjc1sf.jpg"
+  },
+  {
+    restaurant_id: 2,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493025/o_e2aqpv.jpg"
+  },
+  {
+    restaurant_id: 3,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493094/o_krdkls.jpg"
+  },
+  {
+    restaurant_id: 3,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493150/o_wh5hws.jpg"
+  },
+  {
+    restaurant_id: 3,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493192/o_yp5fyg.jpg"
+  },
+  {
+    restaurant_id: 4,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493617/o_ld2a6n.jpg"
+  },
+  {
+    restaurant_id: 4,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493739/o_otly8h.jpg"
+  },
+  {
+    restaurant_id: 4,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493791/o_pl2djh.jpg"
+  },
+  {
+    restaurant_id: 5,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493860/o_bolqep.jpg"
+  },
+  {
+    restaurant_id: 5,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493924/o_ox3p5f.jpg"
+  },
+  {
+    restaurant_id: 5,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493966/o_xfbu2o.jpg"
+  },
+  {
+    restaurant_id: 6,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494375/o_moyyff.jpg",
+  },
+  {
+    restaurant_id: 6,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494431/o_qfw4mh.jpg",
+  },
+  {
+    restaurant_id: 6,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494505/o_rgqtnq.jpg",
+  },
+  {
+    restaurant_id: 7,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495636/o_cn40sn.jpg",
+  },
+  {
+    restaurant_id: 7,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495715/o_zals8s.jpg",
+  },
+  {
+    restaurant_id: 7,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/v1495495746/o_mvhpvg.jpg",
+  },
+  {
+    restaurant_id: 8,
+    url: "",
+  },
+  {
+    restaurant_id: 8,
+    url: "",
+  },
+  {
+    restaurant_id: 8,
+    url: "",
+  },
+  {
+    restaurant_id: 9,
+    url: "",
+  },
+  {
+    restaurant_id: 9,
+    url: "",
+  },
+  {
+    restaurant_id: 9,
+    url: "",
+  },
+  {
+    restaurant_id: 10,
+    url: "",
+  },
+  {
+    restaurant_id: 10,
+    url: "",
+  },
+  {
+    restaurant_id: 10,
+    url: "",
+  },
+  {
+    restaurant_id: 11,
+    url: "",
+  },
+  {
+    restaurant_id: 11,
+    url: "",
+  },
+  {
+    restaurant_id: 11,
+    url: "",
+  },
+  {
+    restaurant_id: 12,
+    url: "",
+  },
+  {
+    restaurant_id: 12,
+    url: "",
+  },
+  {
+    restaurant_id: 12,
+    url: "",
+  },
+  {
+    restaurant_id: 13,
+    url: "",
+  },
+  {
+    restaurant_id: 13,
+    url: "",
+  },
+  {
+    restaurant_id: 13,
+    url: "",
+  },
+  {
+    restaurant_id: 14,
+    url: "",
+  },
+  {
+    restaurant_id: 14,
+    url: "",
+  },
+  {
+    restaurant_id: 14,
+    url: "",
+  },
+  {
+    restaurant_id: 15,
+    url: "",
+  },
+  {
+    restaurant_id: 15,
+    url: "",
+  },
+  {
+    restaurant_id: 15,
+    url: "",
+  },
+  {
+    restaurant_id: 16,
+    url: "",
+  },
+  {
+    restaurant_id: 16,
+    url: "",
+  },
+  {
+    restaurant_id: 16,
+    url: "",
+  },
+  {
+    restaurant_id: 17,
+    url: "",
+  },
+  {
+    restaurant_id: 17,
+    url: "",
+  },
+  {
+    restaurant_id: 17,
+    url: "",
+  },
+  {
+    restaurant_id: 18,
+    url: "",
+  },
+  {
+    restaurant_id: 18,
+    url: "",
+  },
+  {
+    restaurant_id: 18,
+    url: "",
+  },
+  {
+    restaurant_id: 19,
+    url: "",
+  },
+  {
+    restaurant_id: 19,
+    url: "",
+  },
+  {
+    restaurant_id: 19,
+    url: "",
+  },
+  {
+    restaurant_id: 20,
+    url: "",
+  },
+  {
+    restaurant_id: 20,
+    url: "",
+  },
+  {
+    restaurant_id: 20,
+    url: "",
+  },
+  {
+    restaurant_id: 21,
+    url: "",
+  },
+  {
+    restaurant_id: 21,
+    url: "",
+  },
+  {
+    restaurant_id: 21,
+    url: "",
+  },
+  {
+    restaurant_id: 22,
+    url: "",
+  },
+  {
+    restaurant_id: 22,
+    url: "",
+  },
+  {
+    restaurant_id: 22,
+    url: "",
+  },
+  {
+    restaurant_id: 23,
+    url: "",
+  },
+  {
+    restaurant_id: 23,
+    url: "",
+  },
+  {
+    restaurant_id: 23,
+    url: "",
+  },
+  {
+    restaurant_id: 24,
+    url: "",
+  },
+  {
+    restaurant_id: 24,
+    url: "",
+  },
+  {
+    restaurant_id: 24,
+    url: "",
+  },
+  {
+    restaurant_id: 25,
+    url: "",
+  },
+  {
+    restaurant_id: 25,
+    url: "",
+  },
+  {
+    restaurant_id: 25,
+    url: "",
+  },
+  {
+    restaurant_id: 26,
+    url: "",
+  },
+  {
+    restaurant_id: 26,
+    url: "",
+  },
+  {
+    restaurant_id: 26,
+    url: "",
+  },
+  {
+    restaurant_id: 27,
+    url: "",
+  },
+  {
+    restaurant_id: 27,
+    url: "",
+  },
+  {
+    restaurant_id: 27,
+    url: "",
+  },
+  {
+    restaurant_id: 28,
+    url: "",
+  },
+  {
+    restaurant_id: 28,
+    url: "",
+  },
+  {
+    restaurant_id: 28,
+    url: "",
+  },
+  {
+    restaurant_id: 29,
+    url: "",
+  },
+  {
+    restaurant_id: 29,
+    url: "",
+  },
+  {
+    restaurant_id: 29,
+    url: "",
+  },
+  {
+    restaurant_id: 30,
+    url: "",
+  },
+  {
+    restaurant_id: 30,
+    url: "",
+  },
+  {
+    restaurant_id: 30,
+    url: "",
   }
 ])

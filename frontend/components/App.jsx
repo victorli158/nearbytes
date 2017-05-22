@@ -7,6 +7,7 @@ import NavBarContainer from './nav_bar/nav_bar_container';
 import { Footer } from './footer.jsx';
 import { Home } from './home/home';
 import RestaurantContainer from './restaurant/restaurant_container';
+import ReviewFormContainer from './review/review_form_container';
 
 const App = () => (
   <div className="container">
@@ -16,10 +17,11 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/restaurants/:id" component={RestaurantContainer}/>
+      <ProtectedRoute path="/restaurants/:id/reviews/new" component={ReviewFormContainer}/>
       <AuthRoute path="/login" component={SessionFormContainer}/>
       <AuthRoute path="/signup" component={SessionFormContainer}/>
     </Switch>
-    <Footer />
+    <Footer/>
   </div>
 );
 

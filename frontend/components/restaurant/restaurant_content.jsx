@@ -1,4 +1,5 @@
 import React from 'react';
+import { starRating } from '../star_rating';
 // import ReviewIndexContainer from '../reviews/review_container';
 
 class RestaurantContent extends React.Component {
@@ -13,10 +14,16 @@ class RestaurantContent extends React.Component {
       let currentReview = reviews[i];
       reviewItems.push(
         <div className="review-item">
-          { currentReview.user.username }
-          { currentReview.rating }
-          { currentReview.created_at }
-          { currentReview.body }
+          <div className="review-user">
+            { currentReview.user.username }
+          </div>
+          <div className="review-body">
+            <div className="review-rating-date">
+            { starRating(currentReview.rating) }
+            { currentReview.created_at }
+            </div>
+            { currentReview.body }
+          </div>
         </div>
       );
     }

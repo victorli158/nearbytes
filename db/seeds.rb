@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Restaurant.destroy_all
-# User.destroy_all
-# Review.destroy_all
+Restaurant.destroy_all
+User.destroy_all
+Review.destroy_all
 
 guest = User.create({ username: 'Guest', password: 'password' })
 
@@ -22,273 +22,6 @@ miles = User.create({ username: 'Miles H.', password: 'password' })
 jean = User.create({ username: 'Jean C.', password: 'password' })
 gary = User.create({ username: 'Gary Y.', password: 'password' })
 jill = User.create({ username: 'Jill D', password: 'password' })
-
-reviews = Review.create([
-  {
-    body: "Decent, but not quite as good as Sotto Mare.",
-    rating: 3,
-    user_id: 4,
-    restaurant_id: 15
-  },
-  {
-    body: "I can't pronounce this place's name, therefore I give it a 1.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 15
-  },
-  {
-    body: "Bella Trattoria? Mama mia!",
-    rating: 4,
-    user_id: 10,
-    restaurant_id: 15
-  },
-  {
-    body: "Nothing special. Our food took a while to come out too.",
-    rating: 3,
-    user_id: 9,
-    restaurant_id: 14
-  },
-  {
-    body: "Great Italian spot. Try it out!",
-    rating: 4,
-    user_id: 7,
-    restaurant_id: 14
-  },
-  {
-    body: "Quite literally the best restaurant on Earth!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 14
-  },
-  {
-    body: "I had heard of this place plenty of times, but wasn't fond of my breath after eating here.",
-    rating: 3,
-    user_id: 5,
-    restaurant_id: 13
-  },
-  {
-    body: "Everyone likes garlic, right? Service is a little slow though.",
-    rating: 4,
-    user_id: 10,
-    restaurant_id: 13
-  },
-  {
-    body: "The memories... Took my wife here for our first date and the food is still good!",
-    rating: 5,
-    user_id: 4,
-    restaurant_id: 13
-  },
-  {
-    body: "Quite a stinky place indeed. I couldn't figure out the smell. The garlic was good though!",
-    rating: 2,
-    user_id: 2,
-    restaurant_id: 13
-  },
-  {
-    body: "Hah! First review this time! Yeah, I don't like this place either.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 12
-  },
-  {
-    body: "Literally the best! The best, I tell you!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 12
-  },
-  {
-    body: "What an interesting fusion! Delicious and worth trying.",
-    rating: 4,
-    user_id: 6,
-    restaurant_id: 12
-  },
-  {
-    body: "Almost exactly like Chipotle, except much tastier.",
-    rating: 4,
-    user_id: 9,
-    restaurant_id: 11
-  },
-  {
-    body: "Literally the best Mexican food I've ever had! Literally.",
-    rating: 4,
-    user_id: 3,
-    restaurant_id: 11
-  },
-  {
-    body: "This place is ok, but our waiter was a bit rude.",
-    rating: 3,
-    user_id: 11,
-    restaurant_id: 10
-  },
-  {
-    body: "Tropisueno. No, no, no!",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 10
-  }
-  {
-    body: "SF's legendary Mexican restaurant - it deserves the reputation!",
-    rating: 5,
-    user_id: 8,
-    restaurant_id: 9
-  },
-  {
-    body: "Literally the best restaurant I've ever visited!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 9
-  },
-  {
-    body: "Why would you name a restaurant that? Farolito is not even in the English dictionary.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 9
-  }
-  {
-    body: "I asked and there is NO chairman at this place. Only managers.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 8
-  },
-  {
-    body: "The place is alright but you might as well do hot pot at home.",
-    rating: 3,
-    user_id: 5,
-    restaurant_id: 7
-  },
-  {
-    body: "Literally the tastiest I've ever had!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 7
-  },
-  {
-    body: "The food was tasty, the pots were not. Misleading.",
-    rating: 2,
-    user_id: 2,
-    restaurant_id: 7
-  },
-  {
-    body: "I'd give the food about a B-. I'd give the food poisoning an A+",
-    rating: 1,
-    user_id: 8,
-    restaurant_id: 6
-  },
-  {
-    body: "This is literally my favorite restaurant of all time!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 6
-  },
-  {
-    body: "Frauduluent. Ate here for 2 hours and literally NO dragons to be seen!",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 6
-  },
-  {
-    body: "Truly an amazing experience. And I'm rich so the price is nothing.",
-    rating: 4,
-    user_id: 9,
-    restaurant_id: 5
-  },
-  {
-    body: "Chef Geoffrey is incredible, thank you for the best sushi I've had!",
-    rating: 5,
-    user_id: 10,
-    restaurant_id: 5
-  },
-  {
-    body: "Literally the best restaurant I've ever been to!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 5
-  },
-  {
-    body: "ju-ni translates to the number 12. The number of pieces I got for $100.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 5
-  },
-  {
-    body: "Pretty good, though I've had better ramen elsewhere.",
-    rating: 4,
-    user_id: 11,
-    restaurant_id: 4
-  },
-  {
-    body: "This is literally my favorite restaurant ever!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 4
-  },
-  {
-    body: "If you want good ramen, just get it from the grocery store for much cheaper.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 4
-  },
-  {
-    body: "This is literally my favorite restaurant ever!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 3
-  },
-  {
-    body: "Udon Mugizo? More like Udon Mugi-NO.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 3
-  },
-  {
-    body: "The wait is pretty long, but the wings are indeed legendary.",
-    rating: 4,
-    user_id: 7,
-    restaurant_id: 2
-  },
-  {
-    body: "Believe the hype! The chicken wings are to die for.",
-    rating: 5,
-    user_id: 6,
-    restaurant_id: 2
-  },
-  {
-    body: "This is literally my favorite restaurant ever!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 2
-  },
-  {
-    body: "Why do people eat chicken wings? The chickens need those to fly!",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 2
-  },
-  {
-    body: "This is literally my favorite restaurant ever!",
-    rating: 5,
-    user_id: 3,
-    restaurant_id: 1
-  },
-  {
-    body: "I don't get it. It's not sushi and it's not a burrito either.",
-    rating: 1,
-    user_id: 2,
-    restaurant_id: 1
-  },
-  {
-    body: "Worth trying out, but the line is long and it's a bit pricey",
-    rating: 3,
-    user_id: 4,
-    restaurant_id: 1
-  },
-  {
-    body: "I'm so conflicted! The food is delicious but I can't wait that long.",
-    rating: 3,
-    user_id: 5,
-    restaurant_id: 1
-  }
-  ])
 
 restaurants = Restaurant.create([
   {
@@ -770,5 +503,584 @@ restaurants = Restaurant.create([
     sat: "11:00am - 10:00pm",
     sun: "11:00am - 10:00pm",
     categories: "Ice Cream & Frozen Yogurt, Bakeries"
+  }
+])
+
+reviews = Review.create([
+  {
+    body: "My kids love this place! We'll be stopping by regularly from now on.",
+    user_id: 3,
+    rating: 4,
+    restaurant_id: 30
   },
+  {
+    body: "Perfect on a hot summer day!",
+    user_id: 10,
+    rating: 5,
+    restaurant_id: 30
+  },
+  {
+    body: "I mean, it's just ice cream. I didn't notice anything special.",
+    user_id: 6,
+    rating: 3,
+    restaurant_id: 30
+  },
+  {
+    body: "Believe the hype! This ice cream was the best I've had in years.",
+    user_id: 9,
+    rating: 5,
+    restaurant_id: 30
+  },
+  {
+    body: "My husband took me here for my birthday and it was pretty decent!",
+    user_id: 9,
+    rating: 4,
+    restaurant_id: 29
+  },
+  {
+    body: "When I feel like splurging, I come here. Amazing selection!",
+    user_id: 10,
+    rating: 4,
+    restaurant_id: 29
+  },
+  {
+    body: "Literally the best place named Nopa I've ever been to!",
+    user_id: 3,
+    rating: 5,
+    restaurant_id: 29
+  },
+  {
+    body: "Oysters, a great view, what more could you ask for?",
+    user_id: 6,
+    rating: 4,
+    restaurant_id: 28
+  },
+  {
+    body: "Is it just me or are oysters overrated? Paid a pretty penny and wasn't full.",
+    user_id: 11,
+    rating: 2,
+    restaurant_id: 28
+  },
+  {
+    body: "Such fresh oysters at such a beautiful location!",
+    user_id: 6,
+    rating: 4,
+    restaurant_id: 28
+  },
+  {
+    body: "Even their salad is great here! Great menu that does everything right.",
+    user_id: 10,
+    rating: 5,
+    restaurant_id: 27
+  },
+  {
+    body: "This place is quite busy so I won't fault the waiters for being slow. But the food is to die for.",
+    user_id: 5,
+    rating: 4,
+    restaurant_id: 27
+  },
+  {
+    body: "I actually came here with a company I was interviewing with. Didn't get the job, but got the grilled octopus!",
+    user_id: 8,
+    rating: 5,
+    restaurant_id: 27,
+  },
+  {
+    body: "Delicious, and waiters were very attentive!",
+    user_id: 4,
+    rating: 5,
+    restaurant_id: 26
+  },
+  {
+    body: "This place is ok, but I feel it doesn't do Asian food justice.",
+    user_id: 6,
+    rating: 3,
+    restaurant_id: 26
+  },
+  {
+    body: "I'm a pretty big fan of Asian fusion places, and this place does it right.",
+    user_id: 11,
+    rating: 4,
+    restaurant_id: 26
+  },
+  {
+    body: "I proposed to my girlfriend here, but she said no. But the food was amazing!",
+    user_id: 5,
+    rating: 5,
+    restaurant_id: 25
+  },
+  {
+    body: "Imagine the best food you could ever eat. Now imagine this place is twice as good.",
+    user_id: 8,
+    rating: 5,
+    restaurant_id: 25
+  },
+  {
+    body: "My boyfriend and I loved this place! What an experience, Michelin star well-deserved.",
+    user_id: 11,
+    rating: 5,
+    restaurant_id: 25
+  },
+  {
+    body: "Ok, this place is kind of good.",
+    user_id: 2,
+    rating: 5,
+    restaurant_id: 25
+  },
+  {
+    body: "The red sauce is no joke. Still chugging milk. But tasty!",
+    user_id: 10,
+    rating: 4,
+    restaurant_id: 24
+  },
+  {
+    body: "I was excited for this place to open, but it's soo overrated!",
+    user_id: 9,
+    rating: 3,
+    restaurant_id: 24
+  },
+  {
+    body: "Literally the best food in San Francisco! Wow!",
+    user_id: 3,
+    rating: 5,
+    restaurant_id: 24
+  },
+  {
+    body: "teh wine is soo god. lik realy good, had 7 glases",
+    user_id: 6,
+    rating: 5,
+    restaurant_id: 23
+  },
+  {
+    body: "It's pretty good! But I don't know that I'd pay so much for this again.",
+    user_id: 8,
+    rating: 4,
+    restaurant_id: 23
+  },
+  {
+    body: "The most decadent meal I've had in ages. My life is changed.",
+    user_id: 5,
+    rating: 5,
+    restaurant_id: 23
+  },
+  {
+    body: "Too expensive. I can't even get in.",
+    user_id: 2,
+    rating: 1,
+    restaurant_id: 23
+  },
+  {
+    body: "Took my co-workers here and we loved it. Great food!",
+    user_id: 6,
+    rating: 4,
+    restaurant_id: 22
+  },
+  {
+    body: "Best prime rib you can find anywhere. Even got in without a reservation!",
+    user_id: 4,
+    rating: 5,
+    restaurant_id: 22
+  },
+  {
+    body: "I adore this place. Yes the meat is great, but you'll enjoy yourself more with a variety of items.",
+    user_id: 9,
+    rating: 4,
+    restaurant_id: 22
+  },
+  {
+    body: "All you can eat prime rib?! You have to be kidding me!",
+    rating: 4,
+    user_id: 10,
+    restaurant_id: 22
+  },
+  {
+    body: "Wow what an interesting cuisine I'd never experienced! Will come here again.",
+    rating: 5,
+    user_id: 4,
+    restaurant_id: 21
+  },
+  {
+    body: "I tried to look for Burma on a map and couldn't find it. Fake.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 21
+  },
+  {
+    body: "I'd never had Burmese food before and I think I'm in love!",
+    user_id: 7,
+    rating: 5,
+    restaurant_id: 21
+  },
+  {
+    body: "I believed in the hype but my stomach was a bit upset after.",
+    user_id: 8,
+    rating: 3,
+    restaurant_id: 21
+  },
+  {
+    body: "Every time I visit home, I just have to stop by here!",
+    user_id: 11,
+    rating: 4,
+    restaurant_id: 20
+  },
+  {
+    body: "They sure make a mean burger, but clean the bathroom more, please!",
+    user_id: 8,
+    rating: 4,
+    restaurant_id: 20
+  },
+  {
+    body: "Always good any time, anywhere. Pretty much the only fast food I eat!",
+    user_id: 6,
+    rating: 5,
+    restaurant_id: 20
+  },
+  {
+    body: "How can you not like In-N-Out? Best fast food burgers ever.",
+    rating: 4,
+    user_id: 9,
+    restaurant_id: 20
+  },
+  {
+    body: "There was nothing 'In-N-Out' about this place. Such a long line!",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 20
+  },
+  {
+    body: "Great place! Add bacon to your burger - you won't regret it.",
+    rating: 4,
+    user_id: 11,
+    restaurant_id: 19
+  },
+  {
+    body: "Literally the best burger spot of all time!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 19
+  },
+  {
+    body: "I've had better, but it's definitely a solid burger spot.",
+    rating: 4,
+    user_id: 10,
+    restaurant_id: 19
+  },
+  {
+    body: "They messed up my order, so they gave me one more free burger. AWESOME.",
+    rating: 5,
+    user_id: 6,
+    restaurant_id: 19
+  },
+  {
+    body: "Was delicious until I found a fly in our salad.",
+    rating: 3,
+    user_id: 4,
+    restaurant_id: 18
+  },
+  {
+    body: "Not quite as good as Little Star Pizza, but still good.",
+    rating: 4,
+    user_id: 9,
+    restaurant_id: 18
+  },
+  {
+    body: "I don't like pizza. I don't know why I came here.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 18
+  },
+  {
+    body: "Pretty good pizza! I come here when I get a pizza craving.",
+    rating: 4,
+    user_id: 5,
+    restaurant_id: 17
+  },
+  {
+    body: "Even the pepperoni pizza is great. One of my go-to spots!",
+    rating: 4,
+    user_id: 10,
+    restaurant_id: 17
+  },
+  {
+    body: "This is literally the best pizza in the world!",
+    user_id: 3,
+    rating: 5,
+    restaurant_id: 17
+  },
+  {
+    body: "This might be my favorite Italian place in the city!",
+    user_id: 10,
+    rating: 4,
+    restaurant_id: 16
+  },
+  {
+    body: "Literally can't find any better than this!",
+    user_id: 3,
+    rating: 5,
+    restaurant_id: 16
+  },
+  {
+    body: "Decent, but not quite as good as Sotto Mare.",
+    rating: 3,
+    user_id: 4,
+    restaurant_id: 15
+  },
+  {
+    body: "I can't pronounce this place's name, therefore I give it a 1.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 15
+  },
+  {
+    body: "Bella Trattoria? Mama mia!",
+    rating: 4,
+    user_id: 10,
+    restaurant_id: 15
+  },
+  {
+    body: "Nothing special. Our food took a while to come out too.",
+    rating: 3,
+    user_id: 9,
+    restaurant_id: 14
+  },
+  {
+    body: "Great Italian spot. Try it out!",
+    rating: 4,
+    user_id: 7,
+    restaurant_id: 14
+  },
+  {
+    body: "Quite literally the best restaurant on Earth!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 14
+  },
+  {
+    body: "I had heard of this place plenty of times, but wasn't fond of my breath after eating here.",
+    rating: 3,
+    user_id: 5,
+    restaurant_id: 13
+  },
+  {
+    body: "Everyone likes garlic, right? Service is a little slow though.",
+    rating: 4,
+    user_id: 10,
+    restaurant_id: 13
+  },
+  {
+    body: "The memories... Took my wife here for our first date and the food is still good!",
+    rating: 5,
+    user_id: 4,
+    restaurant_id: 13
+  },
+  {
+    body: "Quite a stinky place indeed. I couldn't figure out the smell. The garlic was good though!",
+    rating: 2,
+    user_id: 2,
+    restaurant_id: 13
+  },
+  {
+    body: "Hah! First review this time! Yeah, I don't like this place either.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 12
+  },
+  {
+    body: "Literally the best! The best, I tell you!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 12
+  },
+  {
+    body: "What an interesting fusion! Delicious and worth trying.",
+    rating: 4,
+    user_id: 6,
+    restaurant_id: 12
+  },
+  {
+    body: "Almost exactly like Chipotle, except much tastier.",
+    rating: 4,
+    user_id: 9,
+    restaurant_id: 11
+  },
+  {
+    body: "Literally the best Mexican food I've ever had! Literally.",
+    rating: 4,
+    user_id: 3,
+    restaurant_id: 11
+  },
+  {
+    body: "This place is ok, but our waiter was a bit rude.",
+    rating: 3,
+    user_id: 11,
+    restaurant_id: 10
+  },
+  {
+    body: "Tropisueno. No, no, no!",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 10
+  },
+  {
+    body: "SF's legendary Mexican restaurant - it deserves the reputation!",
+    rating: 5,
+    user_id: 8,
+    restaurant_id: 9
+  },
+  {
+    body: "Literally the best restaurant I've ever visited!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 9
+  },
+  {
+    body: "Why would you name a restaurant that? Farolito is not even in the English dictionary.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 9
+  },
+  {
+    body: "I asked and there is NO chairman at this place. Only managers.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 8
+  },
+  {
+    body: "The place is alright but you might as well do hot pot at home.",
+    rating: 3,
+    user_id: 5,
+    restaurant_id: 7
+  },
+  {
+    body: "Literally the tastiest I've ever had!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 7
+  },
+  {
+    body: "The food was tasty, the pots were not. Misleading.",
+    rating: 2,
+    user_id: 2,
+    restaurant_id: 7
+  },
+  {
+    body: "I'd give the food about a B-. I'd give the food poisoning an A+",
+    rating: 1,
+    user_id: 8,
+    restaurant_id: 6
+  },
+  {
+    body: "This is literally my favorite restaurant of all time!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 6
+  },
+  {
+    body: "Frauduluent. Ate here for 2 hours and literally NO dragons to be seen!",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 6
+  },
+  {
+    body: "Truly an amazing experience. And I'm rich so the price is nothing.",
+    rating: 4,
+    user_id: 9,
+    restaurant_id: 5
+  },
+  {
+    body: "Chef Geoffrey is incredible, thank you for the best sushi I've had!",
+    rating: 5,
+    user_id: 10,
+    restaurant_id: 5
+  },
+  {
+    body: "Literally the best restaurant I've ever been to!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 5
+  },
+  {
+    body: "ju-ni translates to the number 12. The number of pieces I got for $100.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 5
+  },
+  {
+    body: "Pretty good, though I've had better ramen elsewhere.",
+    rating: 4,
+    user_id: 11,
+    restaurant_id: 4
+  },
+  {
+    body: "This is literally my favorite restaurant ever!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 4
+  },
+  {
+    body: "If you want good ramen, just get it from the grocery store for much cheaper.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 4
+  },
+  {
+    body: "This is literally my favorite restaurant ever!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 3
+  },
+  {
+    body: "Udon Mugizo? More like Udon Mugi-NO.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 3
+  },
+  {
+    body: "The wait is pretty long, but the wings are indeed legendary.",
+    rating: 4,
+    user_id: 7,
+    restaurant_id: 2
+  },
+  {
+    body: "Believe the hype! The chicken wings are to die for.",
+    rating: 5,
+    user_id: 6,
+    restaurant_id: 2
+  },
+  {
+    body: "This is literally my favorite restaurant ever!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 2
+  },
+  {
+    body: "Why do people eat chicken wings? The chickens need those to fly!",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 2
+  },
+  {
+    body: "This is literally my favorite restaurant ever!",
+    rating: 5,
+    user_id: 3,
+    restaurant_id: 1
+  },
+  {
+    body: "I don't get it. It's not sushi and it's not a burrito either.",
+    rating: 1,
+    user_id: 2,
+    restaurant_id: 1
+  },
+  {
+    body: "Worth trying out, but the line is long and it's a bit pricey",
+    rating: 3,
+    user_id: 4,
+    restaurant_id: 1
+  },
+  {
+    body: "I'm so conflicted! The food is delicious but I can't wait that long.",
+    rating: 3,
+    user_id: 5,
+    restaurant_id: 1
+  }
 ])

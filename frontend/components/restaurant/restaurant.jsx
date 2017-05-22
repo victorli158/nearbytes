@@ -12,6 +12,12 @@ class Restaurant extends React.Component {
     this.props.fetchRestaurant(this.props.match.params.id);
   }
 
+  componentWillReceiveProps(newProps){
+  if (this.props.restaurant.id !== newProps.restaurant.id) {
+    this.props.fetchRestaurant(newProps.restaurant.id);
+  }
+}
+
   render() {
     return (
       <div className="restaurant-show">

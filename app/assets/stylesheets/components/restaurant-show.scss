@@ -36,10 +36,17 @@
   flex-wrap: wrap;
 }
 
+.main-center {
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
 .main-info {
   margin-top: 30px;
   height: 115px;
-  margin-right: 12vw;
+  // margin-right: 12vw;
+  flex: 1;
 }
 
 .main-links {
@@ -48,7 +55,9 @@
   flex-direction: row;
   align-items: center;
   height: 115px;
-  margin-left: 12vw;
+  justify-content: flex-end;
+  // margin-left: 12vw;
+  flex: 1;
 }
 
 .write-a-review {
@@ -108,14 +117,14 @@
   height: 300px;
   width: 300px;
   display: flex;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .doge {
-  height: 25vh;
-  width: 12vw;
+  height: 220px;
+  width: 220px;
   display: flex;
-  margin: 10px;
+  margin: 5px;
 }
 
 .restaurant-show-content {

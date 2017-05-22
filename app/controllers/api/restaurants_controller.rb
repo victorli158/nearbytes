@@ -9,4 +9,10 @@ class Api::RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
   end
 
+  def destroy
+    @restaurant = Restaurant.find(params[:id])
+    @restaurant.destroy
+    render :show
+  end
+
 end

@@ -7,19 +7,23 @@ class RestaurantContent extends React.Component {
   }
 
   render() {
+    const reviewItems = [];
+    let reviews = this.props.restaurant.reviews;
+    for (let i = 0; i < reviews.length; i++) {
+      let currentReview = reviews[i];
+      reviewItems.push(
+        <div className="review-item">
+          { currentReview.user.username }
+          { currentReview.rating }
+          { currentReview.created_at }
+          { currentReview.body }
+        </div>
+      );
+    }
     return (
       <div className="restaurant-show-content">
         <div className="review-container">
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
-          <p>Reviewsreviewsreviews</p>
+          { reviewItems }
         </div>
         <div className="restaurant-show-info">
           <h4 className="hours-heading">Hours</h4>

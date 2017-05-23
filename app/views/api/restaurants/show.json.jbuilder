@@ -1,4 +1,4 @@
-json.extract! @restaurant, :id, :name, :address, :mon, :tue, :wed, :thu,
+json.extract! @restaurant, :id, :name, :address, :city_params, :mon, :tue, :wed, :thu,
   :fri, :sat, :sun, :price, :lat, :long, :phone, :categories
 
 json.reviews @restaurant.reviews do |review|

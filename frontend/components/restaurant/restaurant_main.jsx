@@ -1,14 +1,11 @@
 import React from 'react';
 import { starRating } from '../star_rating';
+import { Link } from 'react-router-dom';
 // import ReviewIndexContainer from '../reviews/review_container';
 
 class RestaurantMain extends React.Component {
   constructor(props) {
     super(props);
-  }
-
-  componentDidMount() {
-    this.props.fetchRestaurant(this.props.restaurant.id);
   }
 
   render() {
@@ -24,9 +21,11 @@ class RestaurantMain extends React.Component {
             <p>{this.props.restaurant.price} • {this.props.restaurant.categories}</p>
           </div>
           <div className="main-links">
-            <button className="write-a-review">
-              ★ Write a Review
-            </button>
+            <Link to={`/restaurants/${this.props.restaurant.id}/reviews/new`}>
+              <button className="write-a-review">
+                ★ Write a Review
+              </button>
+            </Link>
             <button className="add-picture">
               <img className="camera-icon" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495228180/camera_tq5evd.png" />
               Add Picture

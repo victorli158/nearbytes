@@ -9,14 +9,14 @@ class Restaurant extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchRestaurant(this.props.match.params.id);
+    this.props.fetchRestaurant(this.props.restaurantId);
   }
 
-  componentWillReceiveProps(newProps){
-  if (this.props.restaurant.id !== newProps.restaurant.id) {
-    this.props.fetchRestaurant(newProps.restaurant.id);
+  componentWillReceiveProps(newProps) {
+    if ( newProps.restaurantId !== this.props.restaurantId ) {
+      this.props.fetchRestaurant(newProps.restaurantId);
+    }
   }
-}
 
   render() {
     return (

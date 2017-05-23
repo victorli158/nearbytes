@@ -16,7 +16,7 @@ const App = () => (
     </header>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route path="/restaurants/:id" component={RestaurantContainer}/>
+      <Route exact path="/restaurants/:id" component={RestaurantContainer}/>
       <ProtectedRoute path="/restaurants/:id/reviews/new" component={ReviewFormContainer}/>
       <AuthRoute path="/login" component={SessionFormContainer}/>
       <AuthRoute path="/signup" component={SessionFormContainer}/>

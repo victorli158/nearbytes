@@ -8,25 +8,22 @@ class RestaurantContent extends React.Component {
   }
 
   render() {
-    const reviewItems = [];
     let reviews = this.props.restaurant.reviews;
-    for (let i = 0; i < reviews.length; i++) {
-      let currentReview = reviews[i];
-      reviewItems.push(
-        <div className="review-item">
-          <div className="review-user">
-            { currentReview.user.username }
-          </div>
-          <div className="review-body">
-            <div className="review-rating-date">
-            { starRating(currentReview.rating) }
-            { currentReview.created_at }
-            </div>
-            { currentReview.body }
-          </div>
+    const reviewItems = reviews.map(review => (
+      <div className="review-item" key={review.id}>
+        <div className="review-user">
+          { review.user.username }
+          <img src={review.user.avatar_url}/>
         </div>
-      );
-    }
+        <div className="review-body">
+          <div className="review-rating-date">
+          { starRating(review.rating) }
+          { review.created_at }
+          </div>
+          { review.body }
+        </div>
+      </div>
+    ));
     return (
       <div className="restaurant-show-content">
         <div className="review-container">

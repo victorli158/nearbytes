@@ -13,16 +13,16 @@ Picture.destroy_all
 
 guest = User.create({ username: 'Guest', password: 'password' })
 
-sam = User.create({ username: 'Sam W.', password: 'password' })
-victor = User.create({ username: 'Victor L.', password: 'password' })
-sean = User.create({ username: 'Sean P.', password: 'password' })
-allen = User.create({ username: 'Allen C.', password: 'password' })
-yong = User.create({ username: 'Yong L.', password: 'password' })
-vu = User.create({ username: 'Vu P.', password: 'password' })
-miles = User.create({ username: 'Miles H.', password: 'password' })
-jean = User.create({ username: 'Jean C.', password: 'password' })
-gary = User.create({ username: 'Gary Y.', password: 'password' })
-jill = User.create({ username: 'Jill D', password: 'password' })
+sam = User.create({ username: 'Sam W.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557793/326801_10150325362227593_1346911523_o_doyjqa.jpg' })
+victor = User.create({ username: 'Victor L.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557961/AAEAAQAAAAAAAAoHAAAAJGNkZDYzMDQ1LWJiYzItNDkyYy04ZjcyLWFmZDA1OTNjZjNlYQ_vrqpn8.jpg' })
+sean = User.create({ username: 'Sean P.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558030/AAEAAQAAAAAAAAngAAAAJDEyNzFlYmMwLTAwODgtNGQyYS04MjFmLTA1ZmEzYjM1MjcxYg_wgcdmf.jpg' })
+allen = User.create({ username: 'Allen C.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558175/2cd2a14_jlhixa.jpg' })
+yong = User.create({ username: 'Yong L.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558243/17971963_3385871523003_3202628454023634621_o_rlcmsp.jpg' })
+vu = User.create({ username: 'Vu P.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558356/T03GU501J-U4PQT3RL5-5fdae110eb6b-512_mbyojx.jpg' })
+miles = User.create({ username: 'Miles H.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558451/AAEAAQAAAAAAAAmSAAAAJGUwOThlMmJhLTM3Y2QtNDk5MS1iNWUzLTE1NzY3Mjc4M2ZmZQ_irdiyj.jpg' })
+jean = User.create({ username: 'Jean C.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/v1495558484/Ml1vrkhwh.jpg' })
+gary = User.create({ username: 'Gary Y.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558562/AAEAAQAAAAAAAAlGAAAAJGNhOWVkN2E0LTE2OTQtNDIwMC1iMjIzLWE1Njk0MzEyYmNlZA_gh0inz.jpg' })
+jill = User.create({ username: 'Jill D', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558600/AAEAAQAAAAAAAApaAAAAJDNkM2E1MDBlLTFkNTAtNDc5NS1hMDkyLTg2ZjI1ZGQ4Yjk1Mw_emafrz.jpg' })
 
 restaurants = Restaurant.create([
   {

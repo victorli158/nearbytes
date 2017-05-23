@@ -1,0 +1,35 @@
+.review-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-photo {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.review-business-photos-info {
+  display: flex;
+  flex-direction: row;
+}
+.review-business-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.review-business-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.review-form-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: row;
+}

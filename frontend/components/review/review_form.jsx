@@ -19,13 +19,9 @@ class ReviewForm extends React.Component {
     this.ratingText = "Select your rating.";
   }
 
-  //component did mount fetch restaurant stuff
-
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.loggedIn) {
-  //     this.props.history.push('/');
-  //   }
-  // }
+  componentDidMount() {
+    this.props.fetchRestaurant(this.props.restaurantId);
+  }
 
   update(field) {
     return e => this.setState({

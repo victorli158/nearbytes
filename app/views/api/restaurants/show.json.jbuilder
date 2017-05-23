@@ -8,7 +8,7 @@ json.reviews @restaurant.reviews do |review|
   json.body review.body
   json.user_id review.user_id
   json.user do
-    json.extract! review.user, :username
+    json.extract! review.user, :username, :avatar_url
   end
 end
 

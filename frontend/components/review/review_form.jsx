@@ -11,12 +11,18 @@ class ReviewForm extends React.Component {
     this.renderThreeRating = this.renderThreeRating.bind(this);
     this.renderFourRating = this.renderFourRating.bind(this);
     this.renderFiveRating = this.renderFiveRating.bind(this);
+    this.setOneRating = this.setOneRating.bind(this);
+    this.setTwoRating = this.setTwoRating.bind(this);
+    this.setThreeRating = this.setThreeRating.bind(this);
+    this.setFourRating = this.setFourRating.bind(this);
+    this.setFiveRating = this.setFiveRating.bind(this);
     this.state = {
       starOne: blankStar,
       starTwo: blankStar,
       starThree: blankStar,
       starFour: blankStar,
       starFive: blankStar,
+      ratingNum: 0,
       ratingText: "Select your rating."
     };
   }
@@ -50,13 +56,22 @@ class ReviewForm extends React.Component {
   }
 
   renderOneRating() {
-    this.setState({ starOne: badStar, ratingText: "Yuck! Never again!" });
+    this.setState(
+      { starOne: badStar,
+        starTwo: blankStar,
+        starThree: blankStar,
+        starFour: blankStar,
+        starFive: blankStar,
+        ratingText: "Yuck! Never again!" });
   }
 
   renderTwoRating() {
     this.setState(
       { starOne: badStar,
         starTwo: badStar,
+        starThree: blankStar,
+        starFour: blankStar,
+        starFive: blankStar,
         ratingText: "Meh. I've experienced better." }
       );
   }
@@ -66,6 +81,8 @@ class ReviewForm extends React.Component {
       { starOne: decentStar,
         starTwo: decentStar,
         starThree: decentStar,
+        starFour: blankStar,
+        starFive: blankStar,
         ratingText: "A-OK." }
       );
   }
@@ -76,6 +93,7 @@ class ReviewForm extends React.Component {
         starTwo: goodStar,
         starThree: goodStar,
         starFour: goodStar,
+        starFive: blankStar,
         ratingText: "Yay! I'm a fan." }
       );
   }
@@ -89,6 +107,71 @@ class ReviewForm extends React.Component {
         starFive: goodStar,
         ratingText: "Wow! It doesn't get any better." }
       );
+  }
+
+  setOneRating() {
+    this.setState(
+      { starOne: badStar,
+        starTwo: blankStar,
+        starThree: blankStar,
+        starFour: blankStar,
+        starFive: blankStar,
+        ratingText: "Yuck! Never again!",
+        ratingNum: 1
+      }
+    );
+  }
+
+  setTwoRating() {
+    this.setState(
+      { starOne: badStar,
+        starTwo: badStar,
+        starThree: blankStar,
+        starFour: blankStar,
+        starFive: blankStar,
+        ratingText: "Meh. I've experienced better.",
+        ratingNum: 2
+      }
+    );
+  }
+
+  setThreeRating() {
+    this.setState(
+      { starOne: decentStar,
+        starTwo: decentStar,
+        starThree: decentStar,
+        starFour: blankStar,
+        starFive: blankStar,
+        ratingText: "A-OK.",
+        ratingNum: 3
+      }
+    );
+  }
+
+  setFourRating() {
+    this.setState(
+      { starOne: goodStar,
+        starTwo: goodStar,
+        starThree: goodStar,
+        starFour: goodStar,
+        starFive: blankStar,
+        ratingText: "Yay! I'm a fan.",
+        ratingNum: 4
+      }
+    );
+  }
+
+  setFiveRating() {
+    this.setState(
+      { starOne: goodStar,
+        starTwo: goodStar,
+        starThree: goodStar,
+        starFour: goodStar,
+        starFive: goodStar,
+        ratingText: "Wow! It doesn't get any better.",
+        ratingNum: 5
+      }
+    );
   }
 
   render() {
@@ -109,11 +192,16 @@ class ReviewForm extends React.Component {
         <div className="review-form">
           <div className="review-form-rating">
             <ul className="review-rating">
-              <li id="star-one" onMouseOver={this.renderOneRating}>{this.state.starOne()}</li>
-              <li id="star-two" onMouseOver={this.renderTwoRating}>{this.state.starTwo()}</li>
-              <li id="star-three" onMouseOver={this.renderThreeRating}>{this.state.starThree()}</li>
-              <li id="star-four" onMouseOver={this.renderFourRating}>{this.state.starFour()}</li>
-              <li id="star-five" onMouseOver={this.renderFiveRating}>{this.state.starFive()}</li>
+              <li id="star-one" onMouseOver={this.renderOneRating}
+                                onClick={this.setOneRating}>{this.state.starOne()}</li>
+              <li id="star-two" onMouseOver={this.renderTwoRating}
+                                onClick={this.setTwoRating}>{this.state.starTwo()}</li>
+              <li id="star-three" onMouseOver={this.renderThreeRating}
+                                  onClick={this.setThreeRating}>{this.state.starThree()}</li>
+              <li id="star-four" onMouseOver={this.renderFourRating}
+                                 onClick={this.setFourRating}>{this.state.starFour()}</li>
+              <li id="star-five" onMouseOver={this.renderFiveRating}
+                                 onClick={this.setFiveRating}>{this.state.starFive()}</li>
               <li id="rating-text">{this.state.ratingText}</li>
             </ul>
           </div>

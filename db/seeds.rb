@@ -11,7 +11,7 @@ User.destroy_all
 Review.destroy_all
 Picture.destroy_all
 
-guest = User.create({ username: 'Guest', password: 'password' })
+guest = User.create({ username: 'Guest', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495575175/user_60_square_hsdh3s.png' })
 
 sam = User.create({ username: 'Sam W.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557793/326801_10150325362227593_1346911523_o_doyjqa.jpg' })
 victor = User.create({ username: 'Victor L.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557961/AAEAAQAAAAAAAAoHAAAAJGNkZDYzMDQ1LWJiYzItNDkyYy04ZjcyLWFmZDA1OTNjZjNlYQ_vrqpn8.jpg' })

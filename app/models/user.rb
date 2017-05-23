@@ -5,7 +5,7 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: :true
 
-  after_initialize :ensure_session_token
+  after_initialize :ensure_session_token, :ensure_avatar_url
   before_validation :ensure_session_token_uniqueness
 
   has_many :reviews
@@ -36,6 +36,10 @@ class User < ApplicationRecord
 
   def ensure_session_token
     self.session_token ||= new_session_token
+  end
+
+  def ensure_avatar_url
+    self.avatar_url ||= "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495575175/user_60_square_hsdh3s.png"
   end
 
   def new_session_token

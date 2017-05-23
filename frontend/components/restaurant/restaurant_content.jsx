@@ -13,7 +13,7 @@ class RestaurantContent extends React.Component {
       <div className="review-item" key={review.id}>
         <div className="review-user">
           { review.user.username }
-          <img src={review.user.avatar_url}/>
+          <img className="review-user-pic" src={review.user.avatar_url}/>
         </div>
         <div className="review-body">
           <div className="review-rating-date">

@@ -147,6 +147,15 @@
   flex-direction: column;
 }
 
+.review-user-pic {
+  border-radius: 4px;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  margin-top: 5px;
+  border-style: solid;
+}
+
 .restaurant-show-info {
   display: flex;
   flex-direction: column;
@@ -200,7 +209,9 @@ h4.hours-heading {
 .review-user {
   font-size: 16px;
   font-weight: bold;
-  min-width: 200px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .review-body {

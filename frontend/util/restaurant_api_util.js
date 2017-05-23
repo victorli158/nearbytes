@@ -13,10 +13,10 @@ export const fetchRestaurant = (id) => (
   })
 );
 
-export const createImage = (photo) => (
+export const createImage = (picture) => (
   $.ajax({
     method: 'POST',
-    url: '/api/photos',
-    data: { photo }
+    url: '/api/pictures',
+    data: { picture }
   })
 );

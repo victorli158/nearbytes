@@ -12,6 +12,7 @@ class RestaurantMain extends React.Component {
   }
 
   render() {
+    let pictures = this.props.restaurant.pictures;
     return (
       <div className="restaurant-show-main">
         <div className="main-center">
@@ -26,16 +27,16 @@ class RestaurantMain extends React.Component {
             <button className="write-a-review">
               ★ Write a Review
             </button>
-            <button className="add-photo">
+            <button className="add-picture">
               <img className="camera-icon" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495228180/camera_tq5evd.png" />
-              Add Photo
+              Add Picture
             </button>
           </div>
-          <div className="map-and-photos">
+          <div className="map-and-pictures">
             <img className="map" src="http://www.newthinktank.com/wp-content/uploads/2011/08/US-Map-Detailed-EPS.png"/>
-            <img className="doge" src="https://i.ytimg.com/vi/wB-r8OfIVVU/hqdefault.jpg"/>
-            <img className="doge" src="https://i.ytimg.com/vi/wB-r8OfIVVU/hqdefault.jpg"/>
-            <img className="doge" src="https://i.ytimg.com/vi/wB-r8OfIVVU/hqdefault.jpg"/>
+            <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
+            <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 2]].url}/>
+            <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 3]].url}/>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ class Restaurant < ApplicationRecord
   validates :price, inclusion: { in: ['$', '$$', '$$$', '$$$$'] }
 
   has_many :reviews
-  has_many :photos
+  has_many :pictures
 
   def num_reviews
     self.reviews.length

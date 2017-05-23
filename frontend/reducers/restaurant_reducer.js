@@ -1,4 +1,4 @@
-import { RECEIVE_RESTAURANT, RECEIVE_PHOTO } from '../actions/restaurant_actions.js';
+import { RECEIVE_RESTAURANT, RECEIVE_PICTURE } from '../actions/restaurant_actions.js';
 // import { RECEIVE_REVIEW, REMOVE_REVIEW, RECEIVE_REVIEW_ERRORS, REMOVE_REVIEW_ERRORS } from '../actions/review_actions';
 import merge from 'lodash/merge';
 
@@ -12,7 +12,7 @@ const nullRestaurant = {
   lat: 37.773972,
   long: -122.431297,
   image_url: "",
-  photos: [{url: ""}],
+  pictures: [{url: ""}, {url: ""}, {url: ""}],
   reviews: []
 };
 
@@ -22,9 +22,9 @@ const RestaurantReducer = (oldState = nullRestaurant, action) => {
   switch(action.type){
     case RECEIVE_RESTAURANT:
       return merge({}, action.restaurant);
-    case RECEIVE_PHOTO:
+    case RECEIVE_PICTURE:
       newRestaurant = merge({}, oldState);
-      newRestaurant.photos.push(action.photo);
+      newRestaurant.pictures.push(action.picture);
       return newRestaurant;
     // case RECEIVE_REVIEW:
     //   newRestaurant = merge({}, oldState);

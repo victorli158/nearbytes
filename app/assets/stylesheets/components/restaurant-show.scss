@@ -90,7 +90,7 @@
   margin-right: 4px;
 }
 
-.add-photo {
+.add-picture {
   display: flex;
   display-direction: row;
   align-items: center;
@@ -107,7 +107,7 @@
   font-weight: bold;
 }
 
-.map-and-photos {
+.map-and-pictures {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -120,11 +120,12 @@
   margin-right: 5px;
 }
 
-.doge {
+.restaurant-picture {
   height: 220px;
   width: 220px;
   display: flex;
   margin: 5px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px
 }
 
 .restaurant-show-content {

@@ -9,6 +9,7 @@
 Restaurant.destroy_all
 User.destroy_all
 Review.destroy_all
+Picture.destroy_all
 
 guest = User.create({ username: 'Guest', password: 'password' })
 

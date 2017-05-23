@@ -12,5 +12,11 @@ json.reviews @restaurant.reviews do |review|
   end
 end
 
+json.pictures @restaurant.pictures do |picture|
+  json.id picture.id
+  json.restaurant_id picture.restaurant_id
+  json.url picture.url
+end
+
 json.averageRating @restaurant.average_rating
 json.numReviews @restaurant.num_reviews

@@ -2,7 +2,7 @@ import * as RestaurantAPIUtil from '../util/restaurant_api_util';
 
 export const RECEIVE_ALL_RESTAURANTS = 'RECEIVE_ALL_RESTAURANTS';
 export const RECEIVE_RESTAURANT = 'RECEIVE_RESTAURANT';
-export const RECEIVE_PHOTO = 'RECEIVE_PHOTO';
+export const RECEIVE_PICTURE = 'RECEIVE_PICTURE';
 
 export const receiveAllRestaurants = (restaurants) => ({
   type: RECEIVE_ALL_RESTAURANTS,
@@ -14,9 +14,9 @@ export const receiveRestaurant = (restaurant) => ({
   restaurant
 });
 
-export const receivePhoto = (photo) => ({
-  type: RECEIVE_PHOTO,
-  photo
+export const receivePicture = (picture) => ({
+  type: RECEIVE_PICTURE,
+  picture
 });
 
 export const fetchRestaurants = (params) => dispatch => (
@@ -32,7 +32,7 @@ export const fetchRestaurant = (id) => dispatch => (
 );
 
 export const createImage = (data) => dispatch => (
-  RestaurantAPIUtil.createImage(data).then(photo => (
-    dispatch(receivePhoto(photo))
+  RestaurantAPIUtil.createImage(data).then(picture => (
+    dispatch(receivePicture(picture))
   ))
 );

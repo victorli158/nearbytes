@@ -48,9 +48,9 @@ class ReviewForm extends React.Component {
   render() {
     return (
       <div className="review-page">
-        {this.renderErrors()}
+        Write a Review
         <div className="review-business-info">
-
+          
         </div>
 
       </div>

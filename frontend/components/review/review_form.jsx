@@ -16,6 +16,7 @@ class ReviewForm extends React.Component {
     this.setThreeRating = this.setThreeRating.bind(this);
     this.setFourRating = this.setFourRating.bind(this);
     this.setFiveRating = this.setFiveRating.bind(this);
+    this.resetRating = this.resetRating.bind(this);
     this.state = {
       starOne: blankStar,
       starTwo: blankStar,
@@ -174,6 +175,36 @@ class ReviewForm extends React.Component {
     );
   }
 
+  resetRating() {
+    switch(this.state.ratingNum) {
+      case 5:
+        this.setFiveRating();
+        break;
+      case 4:
+        this.setFourRating();
+        break;
+      case 3:
+        this.setThreeRating();
+        break;
+      case 2:
+        this.setTwoRating();
+        break;
+      case 1:
+        this.setOneRating();
+        break;
+      default:
+        this.setState(
+          { starOne: blankStar,
+            starTwo: blankStar,
+            starThree: blankStar,
+            starFour: blankStar,
+            starFive: blankStar,
+            ratingText: "Select your rating."
+          }
+        );
+    }
+  }
+
   render() {
     let pictures = this.props.restaurant.pictures;
     return (
@@ -193,15 +224,20 @@ class ReviewForm extends React.Component {
           <div className="review-form-rating">
             <ul className="review-rating">
               <li id="star-one" onMouseOver={this.renderOneRating}
-                                onClick={this.setOneRating}>{this.state.starOne()}</li>
+                                onClick={this.setOneRating}
+                                onMouseOut={this.resetRating}>{this.state.starOne()}</li>
               <li id="star-two" onMouseOver={this.renderTwoRating}
-                                onClick={this.setTwoRating}>{this.state.starTwo()}</li>
+                                onClick={this.setTwoRating}
+                                onMouseOut={this.resetRating}>{this.state.starTwo()}</li>
               <li id="star-three" onMouseOver={this.renderThreeRating}
-                                  onClick={this.setThreeRating}>{this.state.starThree()}</li>
+                                  onClick={this.setThreeRating}
+                                  onMouseOut={this.resetRating}>{this.state.starThree()}</li>
               <li id="star-four" onMouseOver={this.renderFourRating}
-                                 onClick={this.setFourRating}>{this.state.starFour()}</li>
+                                 onClick={this.setFourRating}
+                                 onMouseOut={this.resetRating}>{this.state.starFour()}</li>
               <li id="star-five" onMouseOver={this.renderFiveRating}
-                                 onClick={this.setFiveRating}>{this.state.starFive()}</li>
+                                 onClick={this.setFiveRating}
+                                 onMouseOut={this.resetRating}>{this.state.starFive()}</li>
               <li id="rating-text">{this.state.ratingText}</li>
             </ul>
           </div>

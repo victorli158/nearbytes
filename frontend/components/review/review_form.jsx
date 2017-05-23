@@ -11,12 +11,14 @@ class ReviewForm extends React.Component {
     this.renderThreeRating = this.renderThreeRating.bind(this);
     this.renderFourRating = this.renderFourRating.bind(this);
     this.renderFiveRating = this.renderFiveRating.bind(this);
-    this.starOne = blankStar;
-    this.starTwo = blankStar;
-    this.starThree = blankStar;
-    this.starFour = blankStar;
-    this.starFive = blankStar;
-    this.ratingText = "Select your rating.";
+    this.state = {
+      starOne: blankStar,
+      starTwo: blankStar,
+      starThree: blankStar,
+      starFour: blankStar,
+      starFive: blankStar,
+      ratingText: "Select your rating."
+    };
   }
 
   componentDidMount() {
@@ -35,14 +37,6 @@ class ReviewForm extends React.Component {
     this.props.processForm(user);
   }
 
-  // navLink() {
-  //   if (this.props.formType === 'login') {
-  //     return <Link className="link" to="/signup">Sign Up</Link>;
-  //   } else {
-  //     return <Link className="link" to="/login">Log In</Link>;
-  //   }
-  // }
-
   renderErrors() {
     return (
       <ul className="errors">
@@ -56,38 +50,45 @@ class ReviewForm extends React.Component {
   }
 
   renderOneRating() {
-    this.starOne = badStar;
-    this.ratingText = "Yuck! Never again!";
+    this.setState({ starOne: badStar, ratingText: "Yuck! Never again!" });
   }
 
   renderTwoRating() {
-    this.starOne = badStar;
-    this.starTwo = badStar;
-    this.ratingText = "Meh. I've experienced better.";
+    this.setState(
+      { starOne: badStar,
+        starTwo: badStar,
+        ratingText: "Meh. I've experienced better." }
+      );
   }
 
   renderThreeRating() {
-    this.starOne = decentStar;
-    this.starTwo = decentStar;
-    this.starThree = decentStar;
-    this.ratingText = "A-OK.";
+    this.setState(
+      { starOne: decentStar,
+        starTwo: decentStar,
+        starThree: decentStar,
+        ratingText: "A-OK." }
+      );
   }
 
   renderFourRating() {
-    this.starOne = goodStar;
-    this.starTwo = goodStar;
-    this.starThree = goodStar;
-    this.starFour = goodStar;
-    this.ratingText = "Yay! I'm a fan.";
+    this.setState(
+      { starOne: goodStar,
+        starTwo: goodStar,
+        starThree: goodStar,
+        starFour: goodStar,
+        ratingText: "Yay! I'm a fan." }
+      );
   }
 
   renderFiveRating() {
-    this.starOne = goodStar;
-    this.starTwo = goodStar;
-    this.starThree = goodStar;
-    this.starFour = goodStar;
-    this.starFive = goodStar;
-    this.ratingText = "Wow! It doesn't get any better.";
+    this.setState(
+      { starOne: goodStar,
+        starTwo: goodStar,
+        starThree: goodStar,
+        starFour: goodStar,
+        starFive: goodStar,
+        ratingText: "Wow! It doesn't get any better." }
+      );
   }
 
   render() {
@@ -108,12 +109,12 @@ class ReviewForm extends React.Component {
         <div className="review-form">
           <div className="review-form-rating">
             <ul className="review-rating">
-              <li id="star-one" onMouseOver={this.renderOneRating}>{this.starOne()}</li>
-              <li id="star-two" onMouseOver={this.renderTwoRating}>{this.starTwo()}</li>
-              <li id="star-three" onMouseOver={this.renderThreeRating}>{this.starThree()}</li>
-              <li id="star-four" onMouseOver={this.renderFourRating}>{this.starFour()}</li>
-              <li id="star-five" onMouseOver={this.renderFiveRating}>{this.starFive()}</li>
-              <li id="rating-text">{this.ratingText}</li>
+              <li id="star-one" onMouseOver={this.renderOneRating}>{this.state.starOne()}</li>
+              <li id="star-two" onMouseOver={this.renderTwoRating}>{this.state.starTwo()}</li>
+              <li id="star-three" onMouseOver={this.renderThreeRating}>{this.state.starThree()}</li>
+              <li id="star-four" onMouseOver={this.renderFourRating}>{this.state.starFour()}</li>
+              <li id="star-five" onMouseOver={this.renderFiveRating}>{this.state.starFive()}</li>
+              <li id="rating-text">{this.state.ratingText}</li>
             </ul>
           </div>
         </div>

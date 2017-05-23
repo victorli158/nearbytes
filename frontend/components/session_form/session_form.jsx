@@ -96,9 +96,15 @@ class SessionForm extends React.Component {
                     By signing up, you agree to NearBytes's Terms of Service and Privacy Policy
                   </p>
                 )}
-                <div className="submit-div">
-                  <input className="submit" type="submit" value="Log In" />
-                </div>
+                { this.props.formType === 'login' ? (
+                  <div className="submit-div">
+                    <input className="submit" type="submit" value="Log In" />
+                  </div>
+                ) : (
+                  <div className="submit-div">
+                    <input className="submit" type="submit" value="Sign Up" />
+                  </div>
+                )}
             </div>
           </form>
           <img className="graphic"

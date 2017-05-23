@@ -27,7 +27,8 @@ jill = User.create({ username: 'Jill D', password: 'password' })
 restaurants = Restaurant.create([
   {
     name: "Sushirrito",
-    address: "59 New Montgomery St, San Francisco, CA 94105",
+    address: "59 New Montgomery St",
+    city_params: "San Francisco, CA 94105",
     price: "$$",
     lat: 37.788139,
     long: -122.401021,
@@ -43,7 +44,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "San Tung",
-    address: "1031 Irving St, San Francisco, CA 94122",
+    address: "1031 Irving St",
+    city_params: "San Francisco, CA 94122",
     price: "$$",
     lat: 37.763696,
     long: -122.469001,
@@ -59,7 +61,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Udon Mugizo",
-    address: "1581 Webster St, San Francisco, CA 94115",
+    address: "1581 Webster St",
+    city_params: "San Francisco, CA 94115",
     price: "$$",
     lat: 37.785046,
     long: -122.432093,
@@ -75,7 +78,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Mensho Tokyo",
-    address: "672 Geary St, San Francisco, CA 94102",
+    address: "672 Geary St",
+    city_params: "San Francisco, CA 94102",
     price: "$$",
     lat: 37.7786599,
     long: -122.414305,
@@ -91,7 +95,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "ju-ni",
-    address: "1335 Fulton St, San Francisco, CA 94117",
+    address: "1335 Fulton St",
+    city_params: "San Francisco, CA 94117",
     price: "$$$$",
     lat: 37.776589,
     long: -122.438833,
@@ -107,7 +112,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Dragon Beaux",
-    address: "5700 Geary Blvd, San Francisco, CA 94121",
+    address: "5700 Geary Blvd",
+    city_params: "San Francisco, CA 94121",
     price: "$$",
     lat: 37.780500,
     long: -122.480722,
@@ -123,7 +129,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Tasty Pot",
-    address: "815 Clement St, San Francisco, CA 94118",
+    address: "815 Clement St",
+    city_params: "San Francisco, CA 94118",
     price: "$$",
     lat: 37.782578,
     long: -122.4680006,
@@ -139,7 +146,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "The Chairman",
-    address: "670 Larkin St, San Francisco, CA 94109",
+    address: "670 Larkin St",
+    city_params: "San Francisco, CA 94109",
     price: "$",
     lat: 37.784069,
     long: -122.417594,
@@ -155,7 +163,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "El Farolito",
-    address: "2779 Mission St, San Francisco, CA 94110",
+    address: "2779 Mission St",
+    city_params: "San Francisco, CA 94110",
     price: "$",
     lat: 37.752656,
     long: -122.418103,
@@ -171,7 +180,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Tropisueno",
-    address: "75 Yerba Buena Ln, San Francisco, CA 94103",
+    address: "75 Yerba Buena Ln",
+    city_params: "San Francisco, CA 94103",
     price: "$$",
     lat: 37.785349,
     long: -122.403828,
@@ -187,7 +197,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Don Pisto's",
-    address: "510 Union St, San Francisco, CA 94133",
+    address: "510 Union St",
+    city_params: "San Francisco, CA 94133",
     price: "$$",
     lat: 37.800742,
     long: -122.407954,
@@ -203,7 +214,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Tacorea",
-    address: "809 Bush St, San Francisco, CA 94108",
+    address: "809 Bush St",
+    city_params: "San Francisco, CA 94108",
     price: "$",
     lat: 37.789745,
     long: -122.410579,
@@ -219,7 +231,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "The Stinking Rose",
-    address: "325 Columbus Ave, San Francisco, CA 94133",
+    address: "325 Columbus Ave",
+    city_params: "San Francisco, CA 94133",
     price: "$$",
     lat: 37.798125,
     long: -122.407543,
@@ -235,7 +248,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Sotto Mare",
-    address: "552 Green St, San Francisco, CA 94133",
+    address: "552 Green St",
+    city_params: "San Francisco, CA 94133",
     price: "$$",
     lat: 37.799768,
     long: -122.408316,
@@ -251,7 +265,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Bella Trattoria",
-    address: "3854 Geary Blvd, San Francisco, CA 94118",
+    address: "3854 Geary Blvd",
+    city_params: "San Francisco, CA 94118",
     price: "$$",
     lat: 37.781364,
     long: -122.460937,
@@ -267,7 +282,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Beretta",
-    address: "1199 Valencia St, San Francisco, CA 94110",
+    address: "1199 Valencia St",
+    city_params: "San Francisco, CA 94110",
     price: "$$",
     lat: 37.753815,
     long: -122.420729,
@@ -283,7 +299,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Little Star Pizza",
-    address: "846 Divisadero St, San Francisco, CA 94117",
+    address: "846 Divisadero St",
+    city_params: "San Francisco, CA 94117",
     price: "$$",
     lat: 37.777529,
     long: -122.438003,
@@ -299,7 +316,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Golden Boy Pizza",
-    address: "542 Green St, San Francisco, CA 94133",
+    address: "542 Green St",
+    city_params: "San Francisco, CA 94133",
     price: "$",
     lat: 37.799715,
     long: -122.408071,
@@ -315,7 +333,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Super Duper Burgers",
-    address: "721 Market St, San Francisco, CA 94103",
+    address: "721 Market St",
+    city_params: "San Francisco, CA 94103",
     price: "$$",
     lat: 37.786967,
     long: -122.403995,
@@ -331,7 +350,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "In-N-Out Burger",
-    address: "333 Jefferson St, San Francisco, CA 94133",
+    address: "333 Jefferson St",
+    city_params: "San Francisco, CA 94133",
     price: "$",
     lat: 37.807730,
     long: -122.418533,
@@ -347,7 +367,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Burma Superstar",
-    address: "309 Clement St, San Francisco, CA 94118",
+    address: "309 Clement St",
+    city_params: "San Francisco, CA 94118",
     price: "$$",
     lat: 37.78282831,
     long: -122.462555,
@@ -363,7 +384,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "House of Prime Rib",
-    address: "1906 Van Ness Ave, San Francisco, CA 94109",
+    address: "1906 Van Ness Ave",
+    city_params: "San Francisco, CA 94109",
     price: "$$$",
     lat: 37.793452,
     long: -122.422543,
@@ -379,7 +401,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Alexander’s Steakhouse",
-    address: "448 Brannan St, San Francisco, CA 94107",
+    address: "448 Brannan St",
+    city_params: "San Francisco, CA 94107",
     price:"$$$$",
     lat: 37.779306,
     long: -122.395699,
@@ -395,7 +418,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "The Halal Guys",
-    address: "340 O'Farrell St, San Francisco, CA 94102",
+    address: "340 O'Farrell St",
+    city_params: "San Francisco, CA 94102",
     price: "$$",
     lat: 37.786284,
     long: -122.410506,
@@ -411,7 +435,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Gary Danko",
-    address: "800 N Point St, San Francisco, CA 94109",
+    address: "800 N Point St",
+    city_params: "San Francisco, CA 94109",
     price: "$$$$",
     lat: 37.805846,
     long: -122.420607,
@@ -427,7 +452,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "The House",
-    address: "1230 Grant Ave, San Francisco, CA 94133",
+    address: "1230 Grant Ave",
+    city_params: "San Francisco, CA 94133",
     price: "$$$",
     lat: 37.798470,
     long: -122.407051,
@@ -443,7 +469,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Kokkari Estiatorio",
-    address: "200 Jackson St, San Francisco, CA 94111",
+    address: "200 Jackson St",
+    city_params: "San Francisco, CA 94111",
     price: "$$$",
     lat: 37.797030,
     long:  -122.399956,
@@ -459,7 +486,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Hog Island Oyster Co.",
-    address: "1 Ferry Bldg, San Francisco, CA 94111",
+    address: "1 Ferry Bldg",
+    city_params: "San Francisco, CA 94111",
     price: "$$",
     lat: 37.795570,
     long: -122.393321,
@@ -475,7 +503,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Nopa",
-    address: "560 Divisadero St, San Francisco, CA 94117",
+    address: "560 Divisadero St",
+    city_params: "San Francisco, CA 94117",
     price: "$$$",
     lat: 37.774901,
     long: -122.437509,
@@ -491,7 +520,8 @@ restaurants = Restaurant.create([
   },
   {
     name: "Bi-Rite Creamery",
-    address: "3692 18th St, San Francisco, CA 94110",
+    address: "3692 18th St",
+    city_params: "San Francisco, CA 94110",
     price: "$",
     lat: 37.761623,
     long: -122.425742,

@@ -46,11 +46,14 @@ class ReviewForm extends React.Component {
   }
 
   render() {
+    let pictures = this.props.restaurant.pictures;
     return (
       <div className="review-page">
         Write a Review
         <div className="review-business-info">
-          
+          <img src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
+          {this.props.restaurant.name}
+          {this.props.restaurant.price} • {this.props.restaurant.categories}
         </div>
 
       </div>

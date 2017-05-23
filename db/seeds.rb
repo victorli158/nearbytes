@@ -1148,302 +1148,302 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 6,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494375/o_moyyff.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494375/o_moyyff.jpg"
   },
   {
     restaurant_id: 6,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494431/o_qfw4mh.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494431/o_qfw4mh.jpg"
   },
   {
     restaurant_id: 6,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494505/o_rgqtnq.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495494505/o_rgqtnq.jpg"
   },
   {
     restaurant_id: 7,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495636/o_cn40sn.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495636/o_cn40sn.jpg"
   },
   {
     restaurant_id: 7,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495715/o_zals8s.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495715/o_zals8s.jpg"
   },
   {
     restaurant_id: 7,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/v1495495746/o_mvhpvg.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/v1495495746/o_mvhpvg.jpg"
   },
   {
     restaurant_id: 8,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495929/o_f1mwnx.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495929/o_f1mwnx.jpg"
   },
   {
     restaurant_id: 8,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495973/o_gwnsxm.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495973/o_gwnsxm.jpg"
   },
   {
     restaurant_id: 8,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496139/o_r8wcol.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496139/o_r8wcol.jpg"
   },
   {
     restaurant_id: 9,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496203/o_qwlvld.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496203/o_qwlvld.jpg"
   },
   {
     restaurant_id: 9,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496230/o_ojrt6w.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496230/o_ojrt6w.jpg"
   },
   {
     restaurant_id: 9,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496322/o_z7ntkl.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496322/o_z7ntkl.jpg"
   },
   {
     restaurant_id: 10,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496406/o_bkxodx.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496406/o_bkxodx.jpg"
   },
   {
     restaurant_id: 10,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496443/o_laoxni.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496443/o_laoxni.jpg"
   },
   {
     restaurant_id: 10,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496496/o_nbuqew.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496496/o_nbuqew.jpg"
   },
   {
     restaurant_id: 11,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496545/o_twqruc.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496545/o_twqruc.jpg"
   },
   {
     restaurant_id: 11,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496569/o_qbnuyg.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496569/o_qbnuyg.jpg"
   },
   {
     restaurant_id: 11,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496600/o_qayfdq.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496600/o_qayfdq.jpg"
   },
   {
     restaurant_id: 12,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496646/o_erfyqe.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496646/o_erfyqe.jpg"
   },
   {
     restaurant_id: 12,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496685/o_wqlkpq.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496685/o_wqlkpq.jpg"
   },
   {
     restaurant_id: 12,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496717/o_acdnhq.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496717/o_acdnhq.jpg"
   },
   {
     restaurant_id: 13,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496771/o_cd1mko.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496771/o_cd1mko.jpg"
   },
   {
     restaurant_id: 13,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496813/o_puuv76.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496813/o_puuv76.jpg"
   },
   {
     restaurant_id: 13,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496835/o_vefrof.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496835/o_vefrof.jpg"
   },
   {
     restaurant_id: 14,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496885/o_f5fgny.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496885/o_f5fgny.jpg"
   },
   {
     restaurant_id: 14,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496908/o_p2niop.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496908/o_p2niop.jpg"
   },
   {
     restaurant_id: 14,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496955/o_tjso2v.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496955/o_tjso2v.jpg"
   },
   {
     restaurant_id: 15,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497000/o_v8sim7.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497000/o_v8sim7.jpg"
   },
   {
     restaurant_id: 15,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497054/o_o6vgli.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497054/o_o6vgli.jpg"
   },
   {
     restaurant_id: 15,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497097/o_vmig4o.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497097/o_vmig4o.jpg"
   },
   {
     restaurant_id: 16,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497312/o_w1mgnk.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497312/o_w1mgnk.jpg"
   },
   {
     restaurant_id: 16,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497360/o_ane1ir.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497360/o_ane1ir.jpg"
   },
   {
     restaurant_id: 16,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497531/o_vn50mu.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497531/o_vn50mu.jpg"
   },
   {
     restaurant_id: 17,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497576/o_x9wvv7.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497576/o_x9wvv7.jpg"
   },
   {
     restaurant_id: 17,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497603/o_y2bwsx.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497603/o_y2bwsx.jpg"
   },
   {
     restaurant_id: 17,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497634/o_lwb2ao.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497634/o_lwb2ao.jpg"
   },
   {
     restaurant_id: 18,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497700/o_vqpnbq.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497700/o_vqpnbq.jpg"
   },
   {
     restaurant_id: 18,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497736/o_s7o6e1.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497736/o_s7o6e1.jpg"
   },
   {
     restaurant_id: 18,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497783/o_zksmwc.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497783/o_zksmwc.jpg"
   },
   {
     restaurant_id: 19,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497847/o_q4lofb.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497847/o_q4lofb.jpg"
   },
   {
     restaurant_id: 19,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497886/o_fsxylb.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497886/o_fsxylb.jpg"
   },
   {
     restaurant_id: 19,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497937/o_dw3ern.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497937/o_dw3ern.jpg"
   },
   {
     restaurant_id: 20,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497999/o_nrvnlk.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497999/o_nrvnlk.jpg"
   },
   {
     restaurant_id: 20,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498022/o_g5vemf.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498022/o_g5vemf.jpg"
   },
   {
     restaurant_id: 20,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498049/o_lkpikb.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498049/o_lkpikb.jpg"
   },
   {
     restaurant_id: 21,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498362/o_ako7oy.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498362/o_ako7oy.jpg"
   },
   {
     restaurant_id: 21,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498398/o_sobud7.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498398/o_sobud7.jpg"
   },
   {
     restaurant_id: 21,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498491/o_e0dffn.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498491/o_e0dffn.jpg"
   },
   {
     restaurant_id: 22,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498573/o_bdfgam.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498573/o_bdfgam.jpg"
   },
   {
     restaurant_id: 22,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498905/o_aitlqs.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498905/o_aitlqs.jpg"
   },
   {
     restaurant_id: 22,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498957/o_mhcxvm.jpg",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495498957/o_mhcxvm.jpg"
   },
   {
     restaurant_id: 23,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499105/o_oxfkyy.jpg"
   },
   {
     restaurant_id: 23,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499157/o_xxhpun.jpg"
   },
   {
     restaurant_id: 23,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499181/o_hwys0q.jpg"
   },
   {
     restaurant_id: 24,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499238/o_vfxnlh.jpg"
   },
   {
     restaurant_id: 24,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499266/o_muxigx.jpg"
   },
   {
     restaurant_id: 24,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499344/o_enxiul.jpg"
   },
   {
     restaurant_id: 25,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499387/o_eijomw.jpg"
   },
   {
     restaurant_id: 25,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499410/o_idvzxf.jpg"
   },
   {
     restaurant_id: 25,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499436/o_iyw3gj.jpg"
   },
   {
     restaurant_id: 26,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499486/o_eyjzzu.jpg"
   },
   {
     restaurant_id: 26,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499512/o_k5p5rp.jpg"
   },
   {
     restaurant_id: 26,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499534/o_sxlen6.jpg"
   },
   {
     restaurant_id: 27,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499599/o_egaues.jpg"
   },
   {
     restaurant_id: 27,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499627/o_n7iqxa.jpg"
   },
   {
     restaurant_id: 27,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499655/o_ihlfzf.jpg"
   },
   {
     restaurant_id: 28,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499709/o_hw7r8n.jpg"
   },
   {
     restaurant_id: 28,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499740/o_q6gysq.jpg"
   },
   {
     restaurant_id: 28,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499770/o_vc85ns.jpg"
   },
   {
     restaurant_id: 29,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499828/o_mo982l.jpg"
   },
   {
     restaurant_id: 29,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499860/o_wqdtjy.jpg"
   },
   {
     restaurant_id: 29,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499927/o_k8fr4g.jpg"
   },
   {
     restaurant_id: 30,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495500097/o_gjxjpr.jpg"
   },
   {
     restaurant_id: 30,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495500130/o_lzitxa.jpg"
   },
   {
     restaurant_id: 30,
-    url: "",
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495500156/o_fuxcuj.jpg"
   }
 ])

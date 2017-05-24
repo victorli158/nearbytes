@@ -32,16 +32,36 @@ class ReviewForm extends React.Component {
     this.props.fetchRestaurant(this.props.restaurantId);
   }
 
-  update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
+  componentWillMount () {
+    this.props.fetchRestaurant(this.props.restaurantId);
+  }
+
+  update(property) {
+    return e => {
+      e.preventDefault();
+      this.setState({[property]: e.target.value});
+    };
   }
 
   handleSubmit(e) {
+    const form = {
+      body: this.state.body,
+      rating: this.state.ratingNum,
+      user_id: this.props.currentUser.id,
+      restaurant_id: this.props.restaurantId
+    };
     e.preventDefault();
-    const user = this.state;
-    this.props.processForm(user);
+    if (this.props.review) {
+      form.id = this.props.review.id;
+    }
+    this.props.clearReviewErrors();
+    this.props.createReview(form).then(
+      () => {
+        if (this.props.reviewErrors.length === 0) {
+          return this.props.history.replace(`/restaurants/${this.props.restaurantId}`);
+        }
+      }
+    );
   }
 
   renderErrors() {
@@ -209,7 +229,7 @@ class ReviewForm extends React.Component {
     let pictures = this.props.restaurant.pictures;
     return (
       <div className="review-page">
-        <h3>Write a Review</h3>
+        <h3 className="review-heading">Write a Review</h3>
         <div className="review-business-photos-info">
           <img className="review-photo" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
           <ul className="review-business-info">
@@ -219,8 +239,8 @@ class ReviewForm extends React.Component {
             <li>{this.props.restaurant.city_params}</li>
           </ul>
         </div>
-        Your review
-        <div className="review-form">
+        <div className="review-form-page">
+          <h4 className="review-heading">Your review</h4>
           <div className="review-form-rating">
             <ul className="review-rating">
               <li id="star-one" onMouseOver={this.renderOneRating}
@@ -240,6 +260,14 @@ class ReviewForm extends React.Component {
                                  onMouseOut={this.resetRating}>{this.state.starFive()}</li>
               <li id="rating-text">{this.state.ratingText}</li>
             </ul>
+            <form className="review-form" onSubmit={this.handleSubmit}>
+              <textarea className="review-body-input" value={this.state.body} onChange={this.update('body')}
+                placeholder="Your review helps others learn about great local businesses.
+
+                Please don't review this business if you received a freebie for writing this review, or if
+                you're connected in any way to the owner or employees."/>
+              <input className="submit-review" type="submit" value="Post Review" />
+            </form>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import * as ReviewAPIUtil from '../util/reviews_api_util';
+import * as ReviewAPIUtil from '../util/review_api_util';
 import { receiveRestaurant, RECEIVE_RESTAURANT } from './restaurant_actions';
 import { receiveErrors } from './session_actions';
 

@@ -5,7 +5,7 @@ const reviewErrorsReducer = (oldState = [], action) => {
   Object.freeze(oldState);
 switch(action.type) {
   case RECEIVE_REVIEW_ERRORS:
-    return action.reviewErrors;
+    return merge({}, action.reviewErrors);
   case REMOVE_REVIEW_ERRORS:
     return [];
   default:

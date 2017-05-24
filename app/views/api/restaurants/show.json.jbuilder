@@ -1,7 +1,7 @@
 json.extract! @restaurant, :id, :name, :address, :city_params, :mon, :tue, :wed, :thu,
   :fri, :sat, :sun, :price, :lat, :long, :phone, :categories
 
-json.reviews @restaurant.reviews do |review|
+json.reviews @restaurant.reviews.order("created_at DESC") do |review|
   json.id review.id
   json.created_at review.created_at.strftime("%m/%d/%Y")
   json.rating review.rating

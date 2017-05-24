@@ -6,9 +6,9 @@ import ReviewForm from './review_form';
 
 const mapStateToProps = (state, ownProps) => {
   // let formType = ownProps.params.reviewId ? "Update Review" : "New Review";
-  // let review = state.restaurant.reviews.find((el) => el.id == ownProps.params.reviewId );
+  let review = state.restaurant.reviews.find((el) => el.id == ownProps.match.params.reviewId );
   return {
-    // review,
+    review,
     // formType,
     restaurant: state.restaurant,
     currentUser: state.session.currentUser,

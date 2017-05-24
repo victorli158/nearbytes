@@ -9,6 +9,12 @@ class SessionForm extends React.Component {
       password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
+    this.navLink = this.navLink.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.clearErrors();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -52,7 +58,7 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="session-page">
-        {this.renderErrors()}
+        {this.props.errors ? this.renderErrors() : null}
         <div className="form-logo-container">
           <form onSubmit={this.handleSubmit} className="login-form-box">
             { this.props.formType === "login" ? (

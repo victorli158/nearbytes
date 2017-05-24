@@ -15,7 +15,7 @@ class NavBar extends React.Component {
     return (
       <div className="nav-bar">
         <Link className="logo" to="/">NearBytes</Link>
-        { this.props.currentUser === null ? (
+        { this.props.currentUser === null || this.props.currentUser === undefined ? (
           <ul className="nav-buttons">
             <li>
               <button className="nav-button" onClick={this.loginGuest}>
@@ -24,14 +24,14 @@ class NavBar extends React.Component {
             </li>
             <li>
               <Link to="/login">
-                <button className="nav-button">
+                <button className="nav-button" onClick={this.props.clearErrors}>
                   Log In
                 </button>
               </Link>
             </li>
             <li>
               <Link to="/signup">
-                <button className="nav-button">
+                <button className="nav-button" onClick={this.props.clearErrors}>
                   Sign Up
                 </button>
               </Link>

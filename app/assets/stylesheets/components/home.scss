@@ -4,17 +4,28 @@
   background-position: center center;
   height: 600px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .tint {
-  z-index: 1;
   height: 600px;
   width: 100%;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
+}
+
+.home-logo {
+  font-size: 36px;
+  width: auto;
+  margin: 15px;
+  font-family: 'Fontdiner Swanky';
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  z-index: 1;
+  position: absolute;
+  top: 29%;
+  left: 44%;
   justify-content: center;
   align-items: center;
 }

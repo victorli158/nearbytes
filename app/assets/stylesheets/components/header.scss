@@ -23,9 +23,17 @@ header {
   width: auto;
   margin: 15px;
   align-items: center;
+  display: flex;
+  flex-direction: row;
   font-family: 'Fontdiner Swanky';
   color: white;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .nav-buttons {

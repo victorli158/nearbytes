@@ -14,7 +14,9 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="nav-bar">
-        <Link className="logo" to="/">NearBytes</Link>
+        <Link className="logo" to="/">
+          NearBytes
+        </Link>
         { this.props.currentUser === null || this.props.currentUser === undefined ? (
           <ul className="nav-buttons">
             <li>

@@ -263,10 +263,9 @@ class ReviewForm extends React.Component {
             <form className="review-form" onSubmit={this.handleSubmit}>
               <textarea className="review-body-input" value={this.state.body} onChange={this.update('body')}
                 placeholder="Your review helps others learn about great local businesses.
-
                 Please don't review this business if you received a freebie for writing this review, or if
                 you're connected in any way to the owner or employees."/>
-              <input className="submit-review" type="submit" value="Post Review" />
+              <input className="submit" type="submit" value="Post Review" />
             </form>
           </div>
         </div>

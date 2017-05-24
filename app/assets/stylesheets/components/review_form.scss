@@ -1,8 +1,11 @@
 .review-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 20px;
+  min-height: 600px;
+  height: 80%;
+  align-items: center;
 }
 
 .review-photo {
@@ -56,12 +59,18 @@
 }
 
 .review-rating {
-
+  justify-content: left;
 }
 
 .review-form {
   display: flex;
   flex-direction: column;
+}
+
+.review-form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul.review-business-info li:not(:last-child) {

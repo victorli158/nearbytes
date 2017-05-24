@@ -22,7 +22,7 @@ vu = User.create({ username: 'Vu P.', password: 'password', avatar_url: 'http://
 miles = User.create({ username: 'Miles H.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558451/AAEAAQAAAAAAAAmSAAAAJGUwOThlMmJhLTM3Y2QtNDk5MS1iNWUzLTE1NzY3Mjc4M2ZmZQ_irdiyj.jpg' })
 jean = User.create({ username: 'Jean C.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/v1495558484/Ml1vrkhwh.jpg' })
 gary = User.create({ username: 'Gary Y.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558562/AAEAAQAAAAAAAAlGAAAAJGNhOWVkN2E0LTE2OTQtNDIwMC1iMjIzLWE1Njk0MzEyYmNlZA_gh0inz.jpg' })
-jill = User.create({ username: 'Jill D', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558600/AAEAAQAAAAAAAApaAAAAJDNkM2E1MDBlLTFkNTAtNDc5NS1hMDkyLTg2ZjI1ZGQ4Yjk1Mw_emafrz.jpg' })
+jill = User.create({ username: 'Jill D.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558600/AAEAAQAAAAAAAApaAAAAJDNkM2E1MDBlLTFkNTAtNDc5NS1hMDkyLTg2ZjI1ZGQ4Yjk1Mw_emafrz.jpg' })
 
 restaurants = Restaurant.create([
   {
@@ -971,6 +971,12 @@ reviews = Review.create([
     restaurant_id: 9
   },
   {
+    body: "I heard this place is good, but the line was too long to get in.",
+    rating: 1,
+    user_id: 9,
+    restaurant_id: 8
+  },
+  {
     body: "I asked and there is NO chairman at this place. Only managers.",
     rating: 1,
     user_id: 2,
@@ -1085,7 +1091,7 @@ reviews = Review.create([
     restaurant_id: 2
   },
   {
-    body: "Why do people eat chicken wings? The chickens need those to fly!",
+    body: "Why do people eat chicken wings? The chickens need those!",
     rating: 1,
     user_id: 2,
     restaurant_id: 2

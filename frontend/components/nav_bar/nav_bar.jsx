@@ -14,9 +14,7 @@ class NavBar extends React.Component {
   }
 
   loginGuest() {
-    this.props.login(this.props.guest).then(
-      () => this.props.history.goBack()
-    );
+    this.props.login(this.props.guest);
   }
 
   searchBar() {

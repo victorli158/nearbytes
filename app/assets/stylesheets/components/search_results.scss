@@ -11,9 +11,24 @@
   flex-direction: row;
 }
 
-.restaurant-item-info, .restaurant-item-address {
+.restaurant-item-info, .restaurant-item-contact {
   display: flex;
   flex-direction: column;
+}
+
+.restaurant-item-contact {
+  font-size: 14px;
+  justify-content: center;
+}
+
+.restaurant-item-info {
+  min-width: 350px;
+  padding-right: 15px;
+  justify-content: center;
+}
+
+.restaurant-name {
+  font-size: 16px;
 }
 
 .rating-reviews {
@@ -23,14 +38,20 @@
 .search-results-map {
   width: 300px;
   height: 300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 18px;
 }
 
 .search-results-page {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-items: center;
-  min-height: 80%;
+  align-items: flex-start;
+  margin-top: 18px;
+  width: 100%;
+  overflow: scroll;
+  min-height: 75%;
 }
 
 .restaurant-item:not(:first-child) {
@@ -42,4 +63,18 @@
 .restaurant-item {
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+.restaurant-price-categories {
+  font-size: 14px;
+}
+
+.rating-reviews {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.all-restaurants-container {
+  padding-left: 15px;
+  padding-right: 15px;
 }

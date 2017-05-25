@@ -1,5 +1,6 @@
 import React from 'react';
 import { starRating } from '../star_rating';
+import { Link } from 'react-router-dom';
 
 class Restaurants extends React.Component {
   constructor(props) {
@@ -19,19 +20,22 @@ class Restaurants extends React.Component {
     let restaurants = this.props.restaurants;
     const restaurantItems = restaurants.map(restaurant => (
       <div className="restaurant-item" key={restaurant.id}>
+        <Link to={`/restaurants/${restaurant.id}`}>
         <img className="restaurant-item-photo"
           src={restaurant.pictures[Object.keys(restaurant.pictures)[Object.keys(restaurant.pictures).length - 1]].url}/>
+        </Link>
         <div className="restaurant-item-info">
-          { restaurant.name }
+          <Link className="link" to={`/restaurants/${restaurant.id}`}><p className="restaurant-name">{ restaurant.name }</p></Link>
           <div className="rating-reviews">
             { starRating(restaurant.averageRating) }
             { restaurant.numReviews } reviews
           </div>
-          { restaurant.price } • { restaurant.categories }
+          <p className = "restaurant-price-categories">{ restaurant.price } • { restaurant.categories }</p>
         </div>
-        <div className="restaurant-item-address">
+        <div className="restaurant-item-contact">
           <p>{ restaurant.address }</p>
           <p>{ restaurant.city_params }</p>
+          <p>{ restaurant.phone }</p>
         </div>
       </div>
     ));

@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class SearchBar extends React.Component {
   constructor (props) {
@@ -28,25 +29,23 @@ class SearchBar extends React.Component {
     return this.props.history.replace("/restaurants");
   }
 
-  // toggleClass () {
-  //   if (this.props.location === "/") {
-  //     return "Home-Search";
-  //   }
-  //   else {
-  //     return "Search-Form";
-  //   }
-  // }
+  toggleClass () {
+    if (this.props.location.pathname === "/") {
+      return "home-search";
+    }
+    else {
+      return "search-form";
+    }
+  }
 
   render () {
     return(
-      <div className="search-bar">
-        <form className="search-form" onSubmit={this.handleSubmit}>
-          <input className="search-input" type="text" onChange={this.update('inputVal')} placeholder = "Find restaurants, Japanese, $$, "/>
-          <input className="search-button" type="image" alt="Submit" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495666302/search_1_qz1lmz.svg" />
-        </form>
-      </div>
-  );
+      <form className={this.toggleClass()} onSubmit={this.handleSubmit}>
+        <input className="search-input" type="text" onChange={this.update('inputVal')} placeholder = "Find restaurants, Japanese, $$, "/>
+        <input className="search-button" type="image" alt="Submit" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495666302/search_1_qz1lmz.svg" />
+      </form>
+    );
   }
 }
 
-export default SearchBar;
+export default withRouter(SearchBar);

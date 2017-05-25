@@ -22,7 +22,9 @@ class Restaurants extends React.Component {
       </div>
     ));
     return (
-      { restaurantItems }
+      <div className="all-restaurants-container">
+        { restaurantItems }
+      </div>
     );
   }
 

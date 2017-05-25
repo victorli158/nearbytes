@@ -13,7 +13,7 @@ import RestaurantsContainer from './restaurant/restaurants_container';
 const App = () => (
   <div className="container">
     <header className="nav-bar">
-      <NavBarContainer />
+      <Route path="/" component={NavBarContainer} />
     </header>
     <Switch>
       <Route exact path="/" component={HomeContainer}/>

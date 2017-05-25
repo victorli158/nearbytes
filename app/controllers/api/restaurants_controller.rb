@@ -1,9 +1,9 @@
 class Api::RestaurantsController < ApplicationController
 
-  # def index
-  #   @restaurants = restaurants
-  #   render :index
-  # end
+  def index
+    @restaurants = Restaurant.where("categories ~ ?", params[:query])
+    render :index
+  end
 
   def show
     @restaurant = Restaurant.find(params[:id])

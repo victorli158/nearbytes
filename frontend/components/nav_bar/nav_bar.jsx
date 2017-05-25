@@ -1,14 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import SearchBarContainer from '../search_bar_container';
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.loginGuest = this.loginGuest.bind(this);
+    this.searchBar = this.searchBar.bind(this);
+  }
+
+  componentDidUpdate() {
+    this.searchBar();
   }
 
   loginGuest() {
     this.props.login(this.props.guest);
+  }
+
+  searchBar() {
+    if (this.props.location.pathname !== "/" && this.props.location.pathname !== "/login" && this.props.location.pathname !== "/signup") {
+      return (
+        <SearchBarContainer fetchRestaurants={this.props.fetchRestaurants}/>
+      );
+    }
   }
 
   render() {
@@ -17,25 +31,26 @@ class NavBar extends React.Component {
         <Link className="logo" to="/">
           NearBytes
         </Link>
+        { this.searchBar() }
         { this.props.currentUser === null || this.props.currentUser === undefined ? (
           <ul className="nav-buttons">
             <li>
-              <button className="nav-button" onClick={this.loginGuest}>
+              <div className="nav-button" onClick={this.loginGuest}>
                 Demo
-              </button>
+              </div>
             </li>
             <li>
               <Link to="/login">
-                <button className="nav-button" onClick={this.props.clearErrors}>
+                <div className="nav-button" onClick={this.props.clearErrors}>
                   Log In
-                </button>
+                </div>
               </Link>
             </li>
             <li>
               <Link to="/signup">
-                <button className="nav-button" onClick={this.props.clearErrors}>
+                <div className="nav-button" onClick={this.props.clearErrors}>
                   Sign Up
-                </button>
+                </div>
               </Link>
             </li>
           </ul>
@@ -43,7 +58,9 @@ class NavBar extends React.Component {
           <ul className="nav-buttons">
             <li className="greeting">Hi, {this.props.currentUser.username}!</li>
             <li>
-              <button className="nav-button" onClick={this.props.logout}>Log Out</button>
+              <div className="nav-button" onClick={this.props.logout}>
+                Log Out
+              </div>
             </li>
           </ul>
         ) }
@@ -53,4 +70,4 @@ class NavBar extends React.Component {
 
 }
 
-export default NavBar;
+export default withRouter(NavBar);

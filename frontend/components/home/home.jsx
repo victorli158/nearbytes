@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import SearchBar from '../search_bar';
+import { Link, withRouter } from 'react-router-dom';
+import SearchBarContainer from '../search_bar_container';
 
 class Home extends React.Component {
   constructor(props) {
@@ -8,11 +8,9 @@ class Home extends React.Component {
   }
 
   searchBar() {
-    if (this.props.location !== "/") {
-      return (
-        <SearchBar fetchRestaurants={this.props.fetchRestaurants}/>
-      );
-    }
+    return (
+      <SearchBarContainer fetchRestaurants={this.props.fetchRestaurants}/>
+    );
   }
 
   render() {
@@ -20,12 +18,12 @@ class Home extends React.Component {
       <div className="home">
         <Link to="/">
           <text className="home-logo">NearBytes</text>
-          {this.searchBar()}
         </Link>
+        {this.searchBar()}
         <div className="tint"></div>
       </div>
     );
   }
 }
 
-export default Home;
+export default withRouter(Home);

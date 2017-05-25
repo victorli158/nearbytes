@@ -17,12 +17,6 @@ class SessionForm extends React.Component {
     this.props.clearErrors();
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.loggedIn) {
-      this.props.history.push('/');
-    }
-  }
-
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -32,7 +26,9 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm(user);
+    this.props.processForm(user).then(
+      () => this.props.history.goBack()
+    );
   }
 
   navLink() {

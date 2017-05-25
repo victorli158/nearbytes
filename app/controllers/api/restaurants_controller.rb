@@ -4,7 +4,8 @@ class Api::RestaurantsController < ApplicationController
     if params[:query] === "restaurants"
       @restaurants = Restaurant.where.not("name = 'Bi-Rite Creamery'")
     else
-      @restaurants = Restaurant.where("categories ~ ?", params[:query].split.map(&:capitalize).join(' '))
+      query = '%' + params[:query].split.join('%') + '%'
+      @restaurants = Restaurant.where("categories ILIKE :query OR name ILIKE :query", query: query)
     end
     render :index
   end

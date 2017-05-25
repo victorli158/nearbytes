@@ -1,0 +1,45 @@
+.restaurant-item-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.restaurant-item, .rating-reviews {
+  display: flex;
+  flex-direction: row;
+}
+
+.restaurant-item-info, .restaurant-item-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-reviews {
+  align-items: center;
+}
+
+.search-results-map {
+  width: 300px;
+  height: 300px;
+}
+
+.search-results-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  min-height: 80%;
+}
+
+.restaurant-item:not(:first-child) {
+  border-color: rgb(230, 230, 230);
+  border-top-width: 1px;
+  border-style: solid;
+}
+
+.restaurant-item {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}

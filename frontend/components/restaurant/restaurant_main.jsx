@@ -1,6 +1,7 @@
 import React from 'react';
 import { starRating } from '../star_rating';
 import { Link } from 'react-router-dom';
+import SingleRestaurantMap from './single_restaurant_map';
 // import ReviewIndexContainer from '../reviews/review_container';
 
 class RestaurantMain extends React.Component {
@@ -32,7 +33,7 @@ class RestaurantMain extends React.Component {
             </button>
           </div>
           <div className="map-and-pictures">
-            <img className="map" src="http://www.newthinktank.com/wp-content/uploads/2011/08/US-Map-Detailed-EPS.png"/>
+            <SingleRestaurantMap restaurants= {[this.props.restaurant]} />
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 2]].url}/>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 3]].url}/>

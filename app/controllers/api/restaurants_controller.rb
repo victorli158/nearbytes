@@ -1,7 +1,11 @@
 class Api::RestaurantsController < ApplicationController
 
   def index
-    @restaurants = Restaurant.where("categories ~ ?", params[:query])
+    if params[:query] === "restaurants"
+      @restaurants = Restaurant.where.not("name = 'Bi-Rite Creamery'")
+    else
+      @restaurants = Restaurant.where("categories ~ ?", params[:query].split.map(&:capitalize).join(' '))
+    end
     render :index
   end
 

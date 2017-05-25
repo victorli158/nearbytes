@@ -13,11 +13,11 @@ Picture.destroy_all
 
 guest = User.create({ username: 'Guest', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495575175/user_60_square_hsdh3s.png' })
 
-sam = User.create({ username: 'Sam W.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557793/326801_10150325362227593_1346911523_o_doyjqa.jpg' })
+yong = User.create({ username: 'Yong L.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558243/17971963_3385871523003_3202628454023634621_o_rlcmsp.jpg' })
 victor = User.create({ username: 'Victor L.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557961/AAEAAQAAAAAAAAoHAAAAJGNkZDYzMDQ1LWJiYzItNDkyYy04ZjcyLWFmZDA1OTNjZjNlYQ_vrqpn8.jpg' })
+sam = User.create({ username: 'Sam W.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495557793/326801_10150325362227593_1346911523_o_doyjqa.jpg' })
 sean = User.create({ username: 'Sean P.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558030/AAEAAQAAAAAAAAngAAAAJDEyNzFlYmMwLTAwODgtNGQyYS04MjFmLTA1ZmEzYjM1MjcxYg_wgcdmf.jpg' })
 allen = User.create({ username: 'Allen C.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558175/2cd2a14_jlhixa.jpg' })
-yong = User.create({ username: 'Yong L.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558243/17971963_3385871523003_3202628454023634621_o_rlcmsp.jpg' })
 vu = User.create({ username: 'Vu P.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558356/T03GU501J-U4PQT3RL5-5fdae110eb6b-512_mbyojx.jpg' })
 miles = User.create({ username: 'Miles H.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495558451/AAEAAQAAAAAAAAmSAAAAJGUwOThlMmJhLTM3Y2QtNDk5MS1iNWUzLTE1NzY3Mjc4M2ZmZQ_irdiyj.jpg' })
 jean = User.create({ username: 'Jean C.', password: 'password', avatar_url: 'http://res.cloudinary.com/nearbytes/image/upload/v1495558484/Ml1vrkhwh.jpg' })
@@ -1125,6 +1125,10 @@ reviews = Review.create([
 pictures = Picture.create([
   {
     restaurant_id: 1,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492840/o_r5nyro.jpg"
+  },
+  {
+    restaurant_id: 1,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492636/o_g28ahv.jpg"
   },
   {
@@ -1132,8 +1136,8 @@ pictures = Picture.create([
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492728/o_jlkxzg.jpg"
   },
   {
-    restaurant_id: 1,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492840/o_r5nyro.jpg"
+    restaurant_id: 2,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493025/o_e2aqpv.jpg"
   },
   {
     restaurant_id: 2,
@@ -1144,8 +1148,8 @@ pictures = Picture.create([
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495492987/o_bjc1sf.jpg"
   },
   {
-    restaurant_id: 2,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493025/o_e2aqpv.jpg"
+    restaurant_id: 3,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493192/o_yp5fyg.jpg"
   },
   {
     restaurant_id: 3,
@@ -1156,8 +1160,8 @@ pictures = Picture.create([
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493150/o_wh5hws.jpg"
   },
   {
-    restaurant_id: 3,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493192/o_yp5fyg.jpg"
+    restaurant_id: 4,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493791/o_pl2djh.jpg"
   },
   {
     restaurant_id: 4,
@@ -1166,10 +1170,6 @@ pictures = Picture.create([
   {
     restaurant_id: 4,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493739/o_otly8h.jpg"
-  },
-  {
-    restaurant_id: 4,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495493791/o_pl2djh.jpg"
   },
   {
     restaurant_id: 5,
@@ -1197,6 +1197,10 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 7,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/v1495495746/o_mvhpvg.jpg"
+  },
+  {
+    restaurant_id: 7,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495636/o_cn40sn.jpg"
   },
   {
@@ -1204,8 +1208,8 @@ pictures = Picture.create([
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495715/o_zals8s.jpg"
   },
   {
-    restaurant_id: 7,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/v1495495746/o_mvhpvg.jpg"
+    restaurant_id: 8,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496139/o_r8wcol.jpg"
   },
   {
     restaurant_id: 8,
@@ -1216,8 +1220,8 @@ pictures = Picture.create([
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495495973/o_gwnsxm.jpg"
   },
   {
-    restaurant_id: 8,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496139/o_r8wcol.jpg"
+    restaurant_id: 9,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496322/o_z7ntkl.jpg"
   },
   {
     restaurant_id: 9,
@@ -1226,10 +1230,6 @@ pictures = Picture.create([
   {
     restaurant_id: 9,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496230/o_ojrt6w.jpg"
-  },
-  {
-    restaurant_id: 9,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496322/o_z7ntkl.jpg"
   },
   {
     restaurant_id: 10,
@@ -1269,15 +1269,15 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 13,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496835/o_vefrof.jpg"
+  },
+  {
+    restaurant_id: 13,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496771/o_cd1mko.jpg"
   },
   {
     restaurant_id: 13,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496813/o_puuv76.jpg"
-  },
-  {
-    restaurant_id: 13,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495496835/o_vefrof.jpg"
   },
   {
     restaurant_id: 14,
@@ -1317,15 +1317,15 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 17,
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497634/o_lwb2ao.jpg"
+  },
+  {
+    restaurant_id: 17,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497576/o_x9wvv7.jpg"
   },
   {
     restaurant_id: 17,
     url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497603/o_y2bwsx.jpg"
-  },
-  {
-    restaurant_id: 17,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497634/o_lwb2ao.jpg"
   },
   {
     restaurant_id: 18,

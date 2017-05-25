@@ -30,6 +30,7 @@ header {
   font-family: 'Fontdiner Swanky';
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  margin-right: 11%;
 }
 
 .logo-img {
@@ -40,7 +41,10 @@ header {
 
 .nav-buttons {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  min-width: 350px;
+  margin-right: 5px;
 }
 
 .nav-button {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { starRating } from '../star_rating';
 import { Link } from 'react-router-dom';
+import RestaurantsMap from './restaurants_map';
 
 class Restaurants extends React.Component {
   constructor(props) {
@@ -44,7 +45,7 @@ class Restaurants extends React.Component {
         <div className="all-restaurants-container">
           { restaurantItems }
         </div>
-        <img className="search-results-map" src="http://www.newthinktank.com/wp-content/uploads/2011/08/US-Map-Detailed-EPS.png"/>
+        <RestaurantsMap restaurants = {this.props.restaurants} updateFilter = {this.props.updateFilter}/>
       </div>
     );
   }

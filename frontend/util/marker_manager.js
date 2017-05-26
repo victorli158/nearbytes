@@ -33,9 +33,8 @@ class MarkerManager {
 
     let contentString = (
       "<section class='info-message'>" +
-      `<text class = "small-title">${restaurant.name}</text>` +
-      `<img class = "small-picture" src=${restaurant.pictures[0].url} />` +
-      `<text>${restaurant.address}</text>` +
+      `<text class = "small-title">${restaurant.name}</text><br/>` +
+      `<text>${restaurant.address}</text><br/>` + 
       `<text>${restaurant.city_params}</text>` +
       "</section>"
     );

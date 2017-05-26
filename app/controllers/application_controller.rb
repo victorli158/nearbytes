@@ -29,12 +29,4 @@ class ApplicationController < ActionController::Base
     render json: {base: ['Invalid credentials']}, status: 401 if !current_user
   end
 
-  def cloud_name
-    ENV['cloud_name']
-  end
-
-  def upload_preset
-    ENV['upload_preset']
-  end
-
 end

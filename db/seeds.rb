@@ -1293,7 +1293,7 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 15,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495497000/o_v8sim7.jpg"
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495777368/o_y9uxsw.jpg"
   },
   {
     restaurant_id: 15,

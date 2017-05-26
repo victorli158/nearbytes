@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Home from './home';
-import { fetchRestaurants } from '../../actions/restaurant_actions';
+import { fetchRestaurants, fetchRestaurant } from '../../actions/restaurant_actions';
 
 const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchRestaurants: (params)=> dispatch(fetchRestaurants(params))
+  fetchRestaurants: (params) => dispatch(fetchRestaurants(params)),
+  fetchRestaurant: (id) => dispatch(fetchRestaurant(id))
 });
 
 export default connect(

@@ -5,6 +5,7 @@ import RestaurantContentContainer from './restaurant_content_container';
 class Restaurant extends React.Component {
   constructor(props) {
     super(props);
+    window.scrollTo(0, 0);
   }
 
   componentDidMount() {

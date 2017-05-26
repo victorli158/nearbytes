@@ -29,6 +29,7 @@ class ReviewForm extends React.Component {
       ratingText: "Select your rating.",
       errors: this.props.reviewErrors
     };
+    window.scrollTo(0, 0);
   }
 
   componentDidMount() {

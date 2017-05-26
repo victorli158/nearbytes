@@ -21,7 +21,7 @@ class Home extends React.Component {
   }
 
   randomRestaurants() {
-    let randomNum = Math.floor(Math.random() * (10) + 1);
+    let randomNum = Math.floor(Math.random() * (9) + 1);
     return [randomNum, (randomNum * 2), (randomNum * 3)];
   }
 
@@ -35,11 +35,12 @@ class Home extends React.Component {
       return (
         <div className="home">
           <div className="home-splash">
-            <Link to="/">
-              <text className="home-logo">NearBytes</text>
-            </Link>
-            {this.searchBar()}
-            <div className="tint"></div>
+            <div className="tint">
+              <Link to="/">
+                <text className="home-logo">NearBytes</text>
+              </Link>
+              {this.searchBar()}
+            </div>
           </div>
           <div className="featured-restaurants">
             <h3 className="nearbytes-sf">NearBytes San Francisco</h3>

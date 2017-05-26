@@ -21,11 +21,10 @@ class Restaurants extends React.Component {
 
   isEmpty(restaurants) {
     for(var key in restaurants) {
-        if (restaurants.hasOwnProperty(key)) {
-            return false;
-        }
+      if (restaurants.hasOwnProperty(key)) {
+          return false;
+      }
     }
-
     return true;
   }
 

@@ -2,17 +2,20 @@
   background-image: url("http://res.cloudinary.com/nearbytes/image/upload/v1495211213/Ecco-Domani-Summer-Cinemagraph-980px_u7tcxx.gif");
   background-size: cover;
   background-position: center center;
-  height: 600px;
+  height: 65vh;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
 .tint {
-  height: 600px;
+  height: 65vh;
   width: 100%;
-  position: absolute;
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home-logo {
@@ -23,9 +26,7 @@
   color: white;
   text-shadow: 6px 6px 12px #000000;
   z-index: 1;
-  position: absolute;
-  top: 28%;
-  left: 43.5%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -70,6 +71,7 @@
 
 .featured-header {
   font-size: 18px;
+  margin: 15px;
 }
 
 .f-title-properties {

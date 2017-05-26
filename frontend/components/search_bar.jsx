@@ -41,7 +41,7 @@ class SearchBar extends React.Component {
   render () {
     return(
       <form className={this.toggleClass()} onSubmit={this.handleSubmit}>
-        <input className="search-input" type="text" onChange={this.update('inputVal')} placeholder = "Find restaurants, Japanese, Alexander's"/>
+        <input className="search-input" type="text" onChange={this.update('inputVal')} placeholder = "Find restaurants, Japanese, San Tung"/>
         <input className="search-button" type="image" alt="Submit" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495666302/search_1_qz1lmz.svg" />
       </form>
     );

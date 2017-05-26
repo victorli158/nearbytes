@@ -20,6 +20,7 @@
 }
 
 .review-stars-num {
+  white-space: nowrap;
   display: flex;
   flex-direction: row;
   margin-bottom: 13px;
@@ -79,6 +80,13 @@
   align-items: center;
 }
 
+.main-top-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .write-a-review:hover {
   transition: background-color 0.2s ease;
   background-color: #3146EB;
@@ -91,9 +99,11 @@
 }
 
 .add-picture {
+  white-space: nowrap;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   font-size: 12px;
   height: 16px;
   border-color: rgb(204, 204, 204);
@@ -237,4 +247,8 @@ h4.hours-heading {
   font-size: 14px;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.main-price-categories {
+  white-space: nowrap;
 }

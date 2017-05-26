@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  helper_method :current_user, :logged_in?
+  helper_method :current_user, :logged_in?, :cloud_name, :upload_preset
 
   private
 
@@ -28,4 +28,13 @@ class ApplicationController < ActionController::Base
   def require_logged_in
     render json: {base: ['Invalid credentials']}, status: 401 if !current_user
   end
+
+  def cloud_name
+    ENV['cloud_name']
+  end
+
+  def upload_preset
+    ENV['upload_preset']
+  end
+
 end

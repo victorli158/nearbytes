@@ -23,8 +23,9 @@
   border-width: 1px;
   border-color: rgb(204, 204, 204);
   position: absolute;
-  right: 12.5vw;
-  top: 27.5vh;
+  left: 50%;
+  transform: translateX(200px);
+  top: 27.5%;
 }
 
 .map-container-placeholder {

@@ -499,7 +499,7 @@ restaurants = Restaurant.create([
     fri: "11:00 am - 9:00 pm",
     sat: "11:00 am - 9:00 pm",
     sun: "11:00 am - 9:00 pm",
-    categories: "Seafood, Seafood Markets, Live/Raw Food"
+    categories: "Seafood, Seafood Markets"
   },
   {
     name: "Nopa",
@@ -1449,7 +1449,7 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 28,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499709/o_hw7r8n.jpg"
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499770/o_vc85ns.jpg"
   },
   {
     restaurant_id: 28,
@@ -1457,7 +1457,7 @@ pictures = Picture.create([
   },
   {
     restaurant_id: 28,
-    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499770/o_vc85ns.jpg"
+    url: "http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495499709/o_hw7r8n.jpg"
   },
   {
     restaurant_id: 29,

@@ -47,7 +47,7 @@ class RestaurantMain extends React.Component {
               </div>
             </div>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
-            <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 2]].url}/>
+            <img className="restaurant-mid-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 2]].url}/>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 3]].url}/>
           </div>
         </div>

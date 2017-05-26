@@ -7,7 +7,6 @@ class Restaurants extends React.Component {
   constructor(props) {
     super(props);
     this.isEmpty = this.isEmpty.bind(this);
-    window.scrollTo(0, 0);
   }
 
   handleInput (e) {

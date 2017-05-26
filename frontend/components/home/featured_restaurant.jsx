@@ -11,7 +11,8 @@ class FeaturedRestaurant extends React.Component {
     return(
       <div className="featured-restaurant">
         <Link to={`/restaurants/${this.props.restaurant.id}`}>
-          <img className="featured-pic" src={this.props.restaurant.pictures[0].url} />
+          <img className="featured-pic"
+            src={this.props.restaurant.pictures[Object.keys(this.props.restaurant.pictures)[Object.keys(this.props.restaurant.pictures).length - 1]].url} />
         </Link>
         <div className='f-title-properties'>
           <Link className="link" to={`/restaurants/${this.props.restaurant.id}`}>{this.props.restaurant.name}</Link>

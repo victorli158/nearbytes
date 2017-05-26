@@ -18,9 +18,8 @@ class RestaurantsMap extends React.Component{
     google.maps.event.addListener(this.map, 'idle', () => {
       const { north, south, east, west } = this.map.getBounds().toJSON();
       const bounds = {
-        northEast: { lat:north, lng: east },
+        northEast: { lat: north, lng: east },
         southWest: { lat: south, lng: west } };
-      // this.props.updateFilter('bounds', bounds);
     });
   }
 

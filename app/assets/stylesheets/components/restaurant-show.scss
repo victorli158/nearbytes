@@ -92,7 +92,7 @@
 
 .add-picture {
   display: flex;
-  display-direction: row;
+  flex-direction: row;
   align-items: center;
   font-size: 12px;
   height: 16px;
@@ -132,7 +132,7 @@
   margin: 5px;
 }
 
-.restaurant-picture {
+.restaurant-picture, .restaurant-mid-picture {
   height: 220px;
   width: 220px;
   object-fit: cover;

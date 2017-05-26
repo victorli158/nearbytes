@@ -34,13 +34,14 @@ class MarkerManager {
     let contentString = (
       "<section class='info-message'>" +
       `<text class = "small-title">${restaurant.name}</text><br/>` +
-      `<text>${restaurant.address}</text><br/>` + 
+      `<text>${restaurant.address}</text><br/>` +
       `<text>${restaurant.city_params}</text>` +
       "</section>"
     );
 
     let infowindow = new google.maps.InfoWindow({
-      content: contentString
+      content: contentString,
+      disableAutoPan: true
     });
 
     marker.addListener('mouseover', function() {
@@ -66,9 +67,7 @@ class MarkerManager {
         });
         infowindow.close(this.map, marker);
       };
-      }
-
-
+    }
   }
 
   _markersToRemove(){

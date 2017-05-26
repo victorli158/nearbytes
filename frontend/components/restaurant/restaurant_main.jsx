@@ -2,7 +2,6 @@ import React from 'react';
 import { starRating } from '../star_rating';
 import { Link } from 'react-router-dom';
 import SingleRestaurantMap from './single_restaurant_map';
-// import ReviewIndexContainer from '../reviews/review_container';
 
 class RestaurantMain extends React.Component {
   constructor(props) {
@@ -33,7 +32,20 @@ class RestaurantMain extends React.Component {
             </button>
           </div>
           <div className="map-and-pictures">
-            <SingleRestaurantMap restaurants= {[this.props.restaurant]} />
+            <div className="map-and-info">
+              <SingleRestaurantMap restaurants= {[this.props.restaurant]} />
+              <div className="map-address-and-icon">
+                <img className="map-icon" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495759398/location-pin_vkeekx.svg"/>
+                <div className="map-entire-address">
+                  <p className="map-address">{ this.props.restaurant.address }</p>
+                  <p className="map-address">{ this.props.restaurant.city_params }</p>
+                </div>
+              </div>
+              <div className="map-phone-and-icon">
+                <img className="map-icon" src="http://res.cloudinary.com/nearbytes/image/upload/q_100/v1495759407/phone-receiver_jlsqyz.svg"/>
+                <p className="map-phone">{ this.props.restaurant.phone }</p>
+              </div>
+            </div>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 2]].url}/>
             <img className="restaurant-picture" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 3]].url}/>

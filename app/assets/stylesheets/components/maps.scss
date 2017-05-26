@@ -1,4 +1,16 @@
 .single-restaurant-map {
-  height: 135px;
+  height: 250px;
   width: 286px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+}
+
+.map-address {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.map-phone {
+  font-size: 14px;
 }

@@ -113,11 +113,23 @@
   align-items: center;
 }
 
-.map {
-  height: 300px;
-  width: 300px;
-  display: flex;
+.map-and-info {
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+}
+
+.map-icon {
+  width: 18px;
+  height: 18px;
   margin-right: 5px;
+}
+
+.map-address-and-icon, .map-phone-and-icon {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
 }
 
 .restaurant-picture {

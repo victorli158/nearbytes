@@ -19,8 +19,8 @@ export const receivePicture = (picture) => ({
   picture
 });
 
-export const fetchRestaurants = (params) => dispatch => (
-  RestaurantAPIUtil.fetchRestaurants(params).then(restaurants => (
+export const fetchRestaurants = (filters) => dispatch => (
+  RestaurantAPIUtil.fetchRestaurants(filters).then(restaurants => (
     dispatch(receiveAllRestaurants(restaurants))
   ))
 );

@@ -1,6 +1,6 @@
 # NearBytes
 
-[NearBytes Live Link](https://nearbytes.herokuapp.com)
+[NearBytes Live Link](https://nearbytes.me)
 
 NearBytes is a full-stack web application inspired by Yelp for finding
 nearby restaurants. It was built with React/Redux, Ruby on Rails,

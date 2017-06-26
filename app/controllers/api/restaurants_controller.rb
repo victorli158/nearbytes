@@ -1,7 +1,7 @@
 class Api::RestaurantsController < ApplicationController
 
   def index
-    if params[:query] === "restaurants"
+    if params[:query].downcase === "restaurants"
       @restaurants = Restaurant.where.not("name = 'Bi-Rite Creamery'")
     elsif params[:query].downcase === "cheap"
       @restaurants = Restaurant.where("price = '$'")

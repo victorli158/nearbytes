@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  window.store = configureStore();
   const root = document.getElementById('root');
-  // window.login = login;
-  // window.logout = logout;
-  // window.signup = signup;
-  window.fetchRestaurants = fetchRestaurants;
-  window.fetchRestaurant = fetchRestaurant;
-  window.createImage = createImage;
   ReactDOM.render(<Root store={ store }/>, root);
 });

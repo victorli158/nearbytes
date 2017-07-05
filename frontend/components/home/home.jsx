@@ -56,16 +56,16 @@ class Home extends React.Component {
             <h4 className="category-header">Browse Restaurants by Category</h4>
             <div className="restaurant-categories">
               <div className="first-four">
-                <RestaurantCategory category='japanese'/>
-                <RestaurantCategory category='mexican'/>
-                <RestaurantCategory category='italian'/>
-                <RestaurantCategory category='seafood'/>
+                <RestaurantCategory category='Japanese'/>
+                <RestaurantCategory category='Mexican'/>
+                <RestaurantCategory category='Italian'/>
+                <RestaurantCategory category='Asian Fusion'/>
               </div>
               <div className="last-four">
-                <RestaurantCategory category='asian fusion'/>
-                <RestaurantCategory category='american'/>
-                <RestaurantCategory category='pizza'/>
-                <RestaurantCategory category='burgers'/>
+                <RestaurantCategory category='Seafood'/>
+                <RestaurantCategory category='American'/>
+                <RestaurantCategory category='Pizza'/>
+                <RestaurantCategory category='Burgers'/>
               </div>
             </div>
           </div>

@@ -58,7 +58,20 @@
   border-color: rgb(200, 200, 200);
   background-color: rgb(230, 230, 230);
   width: 200px;
-  height: 150px;
+  height: 100px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.category-img {
+  width: 72px;
+  height: 72px;
 }
 
 .browse-categories {

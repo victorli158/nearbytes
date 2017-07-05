@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import SearchBarContainer from '../search_bar_container';
 import FeaturedRestaurant from './featured_restaurant';
+import RestaurantCategory from './restaurant_category';
 
 class Home extends React.Component {
   constructor(props) {
@@ -49,6 +50,23 @@ class Home extends React.Component {
               {randomFeatureds.map((restaurant, idx) => (
                 <FeaturedRestaurant key={idx} restaurant={restaurant}/>
               ))}
+            </div>
+          </div>
+          <div className="browse-categories">
+            <h4 className="category-header">Browse Restaurants by Category</h4>
+            <div className="restaurant-categories">
+              <div className="first-four">
+                <RestaurantCategory category='japanese'/>
+                <RestaurantCategory category='mexican'/>
+                <RestaurantCategory category='italian'/>
+                <RestaurantCategory category='seafood'/>
+              </div>
+              <div className="last-four">
+                <RestaurantCategory category='asian fusion'/>
+                <RestaurantCategory category='american'/>
+                <RestaurantCategory category='pizza'/>
+                <RestaurantCategory category='burgers'/>
+              </div>
             </div>
           </div>
         </div>

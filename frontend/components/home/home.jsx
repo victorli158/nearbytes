@@ -56,16 +56,16 @@ class Home extends React.Component {
             <h4 className="category-header">Browse Restaurants by Category</h4>
             <div className="restaurant-categories">
               <div className="first-four">
-                <RestaurantCategory category='Japanese'/>
-                <RestaurantCategory category='Mexican'/>
-                <RestaurantCategory category='Italian'/>
-                <RestaurantCategory category='Asian Fusion'/>
+                <RestaurantCategory category='Japanese' fetchRestaurants={this.props.fetchRestaurants}/>
+                <RestaurantCategory category='Mexican' fetchRestaurants={this.props.fetchRestaurants}/>
+                <RestaurantCategory category='Italian' fetchRestaurants={this.props.fetchRestaurants}/>
+                <RestaurantCategory category='Asian Fusion' fetchRestaurants={this.props.fetchRestaurants}/>
               </div>
               <div className="last-four">
-                <RestaurantCategory category='Seafood'/>
-                <RestaurantCategory category='American'/>
-                <RestaurantCategory category='Pizza'/>
-                <RestaurantCategory category='Burgers'/>
+                <RestaurantCategory category='Seafood' fetchRestaurants={this.props.fetchRestaurants}/>
+                <RestaurantCategory category='American' fetchRestaurants={this.props.fetchRestaurants}/>
+                <RestaurantCategory category='Pizza' fetchRestaurants={this.props.fetchRestaurants}/>
+                <RestaurantCategory category='Burgers' fetchRestaurants={this.props.fetchRestaurants}/>
               </div>
             </div>
           </div>

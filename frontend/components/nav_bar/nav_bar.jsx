@@ -7,6 +7,7 @@ class NavBar extends React.Component {
     super(props);
     this.loginGuest = this.loginGuest.bind(this);
     this.searchBar = this.searchBar.bind(this);
+    this.navigateHome = this.navigateHome.bind(this);
   }
 
   componentDidUpdate() {
@@ -25,12 +26,17 @@ class NavBar extends React.Component {
     }
   }
 
+  navigateHome() {
+    this.props.fetchRestaurants("");
+    return this.props.history.replace("/");
+  }
+
   render() {
     return (
       <div className="nav-bar">
-        <Link className="logo" to="/">
+        <p className="logo" onClick={this.navigateHome}>
           NearBytes
-        </Link>
+        </p>
         { this.searchBar() }
         { this.props.currentUser === null || this.props.currentUser === undefined ? (
           <ul className="nav-buttons">

@@ -62,18 +62,55 @@ h3 {
   padding-right: 0;
 }
 
-.submit {
+.submit, .submit-guest {
   background-color: #1D32D7;
   color: white;
-  padding: 20px;
   line-height: 3px;
-  width: 200px;
+  width: 100px;
   border-color: #1D328C;
+  margin: 5px;
 }
 
-.submit:hover {
+.submit {
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.submit-guest {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border-color: rgb(29, 50, 140);
+}
+
+#session-form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 32px;
+}
+
+.submit-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.submit:hover, .submit-guest:hover {
   transition: background-color 0.2s ease;
   background-color: #3146EB;
+  cursor: pointer;
 }
 
 .submit-div {

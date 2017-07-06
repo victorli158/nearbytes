@@ -11,10 +11,15 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
     this.navLink = this.navLink.bind(this);
+    this.loginGuest = this.loginGuest.bind(this);
   }
 
   componentDidMount() {
     this.props.clearErrors();
+  }
+
+  loginGuest() {
+    this.handleSubmit();
   }
 
   update(field) {
@@ -69,8 +74,8 @@ class SessionForm extends React.Component {
             </div>
             )
           }
-            <div>
-              <br/>
+            <div id="session-form-div">
+
               <label>Username
                 <br/>
                 <br/>
@@ -78,8 +83,6 @@ class SessionForm extends React.Component {
                   value={this.state.username}
                   onChange={this.update('username')}/>
               </label>
-              <br/>
-              <br/>
               <label>Password
                 <br/>
                 <br/>
@@ -88,7 +91,6 @@ class SessionForm extends React.Component {
                   value={this.state.password}
                   onChange={this.update('password')}/>
               </label>
-                <br/>
                 { this.props.formType === 'login' ? (
                   <p className="disclaimer">
                     By logging in, you agree to NearBytes's Terms of Service and Privacy Policy
@@ -99,12 +101,22 @@ class SessionForm extends React.Component {
                   </p>
                 )}
                 { this.props.formType === 'login' ? (
-                  <div className="submit-div">
-                    <input className="submit" type="submit" value="Log In" />
+                  <div className="submit-buttons">
+                    <div className="submit-div">
+                      <input className="submit" type="submit" value="Log In" />
+                    </div>
+                    <div className="submit-guest" onClick={this.loginGuest}>
+                      <p className="guest">Guest</p>
+                    </div>
                   </div>
                 ) : (
-                  <div className="submit-div">
-                    <input className="submit" type="submit" value="Sign Up" />
+                  <div className="submit-buttons">
+                    <div className="submit-div">
+                      <input className="submit" type="submit" value="Sign Up" />
+                    </div>
+                    <div className="submit-guest" onClick={this.loginGuest}>
+                      <p className="guest">Guest</p>
+                    </div>
                   </div>
                 )}
             </div>

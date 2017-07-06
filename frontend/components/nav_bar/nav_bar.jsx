@@ -5,17 +5,12 @@ import SearchBarContainer from '../search_bar_container';
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.loginGuest = this.loginGuest.bind(this);
     this.searchBar = this.searchBar.bind(this);
     this.navigateHome = this.navigateHome.bind(this);
   }
 
   componentDidUpdate() {
     this.searchBar();
-  }
-
-  loginGuest() {
-    this.props.login(this.props.guest);
   }
 
   searchBar() {
@@ -39,11 +34,6 @@ class NavBar extends React.Component {
         { this.searchBar() }
         { this.props.currentUser === null || this.props.currentUser === undefined ? (
           <ul className="nav-buttons">
-            <li>
-              <div className="nav-button" onClick={this.loginGuest}>
-                Demo
-              </div>
-            </li>
             <li>
               <Link to="/login">
                 <div className="nav-button" onClick={this.props.clearErrors}>

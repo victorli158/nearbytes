@@ -1,6 +1,6 @@
 import React from 'react';
 import { starRating } from '../star_rating';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class FeaturedRestaurant extends React.Component {
   constructor(props) {
@@ -30,4 +30,4 @@ class FeaturedRestaurant extends React.Component {
   }
 }
 
-export default FeaturedRestaurant;
+export default withRouter(FeaturedRestaurant);

@@ -8,6 +8,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.randomRestaurants = this.randomRestaurants.bind(this);
+    this.refresh = this.refresh.bind(this);
     window.scrollTo(0, 0);
   }
 
@@ -26,20 +27,23 @@ class Home extends React.Component {
     return [randomNum, (randomNum * 2), (randomNum * 3)];
   }
 
+  refresh() {
+    location.reload();
+  }
+
   render() {
     let randomIds = this.randomRestaurants();
     let randomFeatureds = randomIds.map((id) => (
       this.props.restaurants[id]
     ));
-
-    if (randomFeatureds[0] !== undefined) {
+    if (randomFeatureds[2] !== undefined) {
       return (
         <div className="home">
           <div className="home-splash">
             <div className="tint">
-              <Link to="/">
-                <text className="home-logo">NearBytes</text>
-              </Link>
+              <p>
+                <text className="home-logo" onClick={this.refresh}>NearBytes</text>
+              </p>
               {this.searchBar()}
             </div>
           </div>

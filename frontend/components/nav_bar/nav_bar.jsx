@@ -27,7 +27,6 @@ class NavBar extends React.Component {
   }
 
   navigateHome() {
-    this.props.fetchRestaurants("");
     return this.props.history.replace("/");
   }
 

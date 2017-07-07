@@ -12,14 +12,11 @@ class SessionForm extends React.Component {
     this.renderErrors = this.renderErrors.bind(this);
     this.navLink = this.navLink.bind(this);
     this.loginGuest = this.loginGuest.bind(this);
+    this.update = this.update.bind(this);
   }
 
   componentDidMount() {
     this.props.clearErrors();
-  }
-
-  loginGuest() {
-    this.handleSubmit();
   }
 
   update(field) {
@@ -54,6 +51,22 @@ class SessionForm extends React.Component {
         ))}
       </ul>
     );
+  }
+
+  loginGuest(e) {
+    e.preventDefault();
+    let name = "Guest";
+    let password = "password";
+
+    for (let i = 0; i < name.length; i++) {
+      setTimeout(() => this.setState({username: name.slice(0, i + 1)}), (i * 70));
+    }
+
+    for (let j = 0; j < password.length; j++) {
+      setTimeout(() => this.setState({password: password.slice(0, j + 1)}), ((j + 5) * 70));
+    }
+
+    setTimeout(() => this.props.login(this.state), 2000);
   }
 
   render() {

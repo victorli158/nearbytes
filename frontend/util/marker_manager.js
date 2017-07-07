@@ -48,6 +48,10 @@ class MarkerManager {
       infowindow.open(this.map, marker);
     });
 
+    marker.addListener('click', function() {
+      window.location.href = `/#/restaurants/${marker.restaurantId}`;
+    });
+
     marker.addListener('mouseout', function() {
       infowindow.close(this.map, marker);
     });

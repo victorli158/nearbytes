@@ -594,7 +594,7 @@ reviews = Review.create([
   },
   {
     body: "Such fresh oysters at such a beautiful location!",
-    user_id: 6,
+    user_id: 9,
     rating: 4,
     restaurant_id: 28
   },

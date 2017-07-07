@@ -14,7 +14,7 @@ class RestaurantCategory extends React.Component {
 
   render() {
     let category = this.props.category;
-    let path = `./assets/${category}.png`;
+    let path = `http://res.cloudinary.com/nearbytes/image/upload/v1499395359/${category}.png`;
     return(
       <div className="restaurant-category" onClick={this.handleClick}>
         <img className='category-img' src={path} />

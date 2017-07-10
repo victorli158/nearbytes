@@ -245,7 +245,6 @@ class ReviewForm extends React.Component {
     let pictures = this.props.restaurant.pictures;
     return (
       <div className="review-page">
-        {this.props.reviewErrors ? this.renderErrors() : this.props.clearReviewErrors()}
         <h3 className="review-heading">Write a Review</h3>
         <div className="review-business-photos-info">
           <img className="review-photo" src={pictures[Object.keys(pictures)[Object.keys(pictures).length - 1]].url}/>
@@ -257,6 +256,7 @@ class ReviewForm extends React.Component {
           </ul>
         </div>
         <div className="review-form-page">
+          {this.props.reviewErrors ? this.renderErrors() : this.props.clearReviewErrors()}
           <h4 className="review-heading">Your review</h4>
           <div className="review-form-submit">
             <div className="review-form-rating">

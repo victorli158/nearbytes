@@ -24,6 +24,7 @@ header {
   font-size: 22px;
   width: auto;
   margin: 15px;
+  margin-left: 30px;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -46,6 +47,10 @@ header {
   align-items: center;
   min-width: 350px;
   margin-right: 5px;
+}
+
+.nav-buttons:last-child {
+  margin-right: 30px;
 }
 
 .nav-button {

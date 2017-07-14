@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :searches, only: [:show]
   end
 
+  get "*path", to: "static_pages#root"
   root "static_pages#root"
 end
